@@ -174,11 +174,7 @@ article a {
   color: var(--tertiary);
 }
 
-.apps-container {
-  display: flex;
-  justify-content: space-around;
-}
-
+/* ABOUT STYLES */
 #about-me {
   flex-wrap: wrap;
   display: flex;
@@ -195,6 +191,14 @@ article a {
   padding-left: 10px;
 }
 
+/* SOLO PROJECTS STYLES */
+.apps-container {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* CONTACT STYLES */
 #contact-info {
   list-style: none;
   display: flex;
