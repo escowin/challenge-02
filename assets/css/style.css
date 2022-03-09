@@ -26,7 +26,7 @@ h2 {
   /* font-size: 20px; */
 }
 
-h3 {
+h3, h4 {
   font-weight: lighter;
 }
 
@@ -153,13 +153,14 @@ footer div {
 .hero {
   background-image: url("../../images/hero-bg.jpg");
   background-size: cover;
-  display: flex;
+  display: inline-block;
   justify-content: left;
-  /* flex-wrap: wrap; */
-  /* align-items: flex-start; */
+  flex-wrap: wrap;
+  align-items: flex-start;
   background-attachment: fixed;
   background-position: 100%;
-  height: 500px;
+  width: 100%;
+  height: 400px;
 }
 
 /* #subtitle {
@@ -173,6 +174,29 @@ article a {
   color: var(--tertiary);
 }
 
+.apps-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+#about-me {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+}
+
+#about-me h3 {
+  border: 0 0 0 2px #232872;
+  margin: 5px;
+  padding-right: 5px;
+}
+
+#about-me p {
+  padding-left: 10px;
+}
+
 #contact-info {
   list-style: none;
+  display: flex;
+  justify-content: space-around;
 }
