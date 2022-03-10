@@ -202,6 +202,10 @@ article a {
   justify-content: space-around;
 }
 
+#solo-work {
+  flex: 1;
+}
+
 /* CONTACT STYLES */
 #contact-info {
   list-style: none;
