@@ -15,6 +15,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+}
+
 body {
   color: var(--tertiary);
   background-color: var(--secondary);
@@ -36,11 +40,11 @@ h3, .small-cap {
 
 /* VISUAL AID, DELETE BEFORE FIN */
 .flexbox-container {
-  border: 3px solid #232872;
+  border: 3px solid;
   padding: 10px;
 }
 .flexbox-item {
-  border: 2px solid #771414;
+  border: 2px solid;
 }
 
 /* HEADER OVERALL*/
