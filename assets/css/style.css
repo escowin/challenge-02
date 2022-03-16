@@ -1,14 +1,28 @@
+/* VISUAL AID, DELETE BEFORE FIN */
+.container {
+  border: 3px solid;
+  padding: 10px;
+}
+
+.item {
+  border: 2px solid;
+  padding: 5px;
+}
+
+/* BASE PALETTE & STYLES */
 :root {
   --primary: #e6e6e6;
-  --secondary: #7272729c;
-  --tertiary: #3a3636;
-  --quaternary: #771414;
+  --secondary: #9b97979c;
+  --tertiary: #28282c;
+  --quaternary: #cf0b0b;
 }
-/*clean minimal aesthetic*/
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 200;
 }
 
 a {
@@ -22,7 +36,6 @@ img {
 body {
   color: var(--tertiary);
   background-color: var(--secondary);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h2 {
@@ -38,14 +51,7 @@ h3, .small-cap {
   font-variant: small-caps;
 }
 
-/* VISUAL AID, DELETE BEFORE FIN */
-.flexbox-container {
-  border: 3px solid;
-  padding: 10px;
-}
-.flexbox-item {
-  border: 2px solid;
-}
+
 
 /* HEADER OVERALL*/
 header {
