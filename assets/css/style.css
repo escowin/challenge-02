@@ -119,14 +119,12 @@ header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
-  /* transition-delay: color 1s; */
 }
 
 header nav ul li a:hover {
   color: var(--quaternary);
   text-shadow: 5px 5px 20px var(--tertiary);
-  /* background-color: var(--tertiary); */
-  /* border-radius: 15px; */
+  background-color: var(--tertiary);
   /* box-shadow: 5px 5px 30px var(--secondary); */
 }
 
