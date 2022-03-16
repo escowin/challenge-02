@@ -64,7 +64,7 @@ header a, footer a {
 #header-header {
   display: flex;
   justify-content: space-between;
-  padding: 2px;
+  padding: 1px 10px 2px 10px;
   margin: 2px;
 }
 
@@ -104,7 +104,7 @@ header h1:hover {
 
 /* HEADER NAV BAR */
 header nav {
-  margin: 7px 0;
+  margin: 6px 0 0 0;
 }
 
 header nav ul {
@@ -119,13 +119,15 @@ header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
+  /* transition-delay: color 1s; */
 }
 
 header nav ul li a:hover {
-  color: var(--primary);
-  background-color: var(--tertiary);
-  border-radius: 15px;
-  box-shadow: 5px 5px 30px var(--secondary);
+  color: var(--quaternary);
+  text-shadow: 5px 5px 20px var(--tertiary);
+  /* background-color: var(--tertiary); */
+  /* border-radius: 15px; */
+  /* box-shadow: 5px 5px 30px var(--secondary); */
 }
 
 /*footer */
