@@ -75,11 +75,6 @@ header h1 {
   color: var(--tertiary);
 }
 
-header h1:hover {
-  color: var(--primary);
-  text-shadow: 5px 5px 20px var(--secondary);
-}
-
 #header-left {
   flex-wrap: wrap;
   display: flex;
@@ -121,10 +116,10 @@ header nav ul li a {
   font-size: 1.55vw;
 }
 
-header nav ul li a:hover {
+header a:hover {
   color: var(--quaternary);
   text-shadow: 5px 5px 20px var(--tertiary);
-  background-color: var(--tertiary);
+  /* background-color: var(--tertiary); */
   /* box-shadow: 5px 5px 30px var(--secondary); */
 }
 
