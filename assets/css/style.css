@@ -233,7 +233,7 @@ main a:hover {
 }
 
 #main-project, .card-small {
-  margin: 25px;
+  margin: 20px;
 }
 
 #main-project {
@@ -253,7 +253,8 @@ main a:hover {
 
 
 .card-small {
-  width: 28%;
+  width: 30%;
+  text-align: left;
 }
 
 .card-small img {
@@ -266,6 +267,11 @@ main a:hover {
 .card-small img:hover {
   box-shadow: 2px 2px 30px var(--quaternary);
 }
+
+.role {
+  text-shadow: 2px 2px 10px var(--primary);
+}
+
 
 /* CONTACT STYLES */
 /* #contact-info {
