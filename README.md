@@ -2,8 +2,7 @@
 Advanced CSS Challenge: Professional Portfolio
 
 ## Purpose
-Showcase my work.
-<img src="assets\images\app-portfolio.jpg" height="800" width="450">
+Showcase my work in a visually appealing fashion.
 
 ## Built With
 * HTML
@@ -13,6 +12,8 @@ Showcase my work.
 * LIVE | https://escowin.github.io/challenge-02/
 * REPO | https://github.com/escowin/challenge-02/
 
+## Screenshot
+<img src="assets\images\app-portfolio.jpg" width="450">
 
 ## Contributor
 Edwin Escobar
