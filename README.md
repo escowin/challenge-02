@@ -3,7 +3,7 @@ Advanced CSS Challenge: Professional Portfolio
 
 ## Purpose
 Showcase my work.
-<img src="assets\images\app-portfolio.jpg height="800" width="450">
+<img src="assets\images\app-portfolio.jpg" height="800" width="450">
 
 ## Built With
 * HTML
