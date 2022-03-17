@@ -151,8 +151,9 @@ main h2 {
   color: var(--primary);
   font-size: 1.55vw;
   padding: 10px 25px;
-  margin: 10px 25px 0 25px;
+  margin: 10px 25px 25px 25px;
   border-radius: 15px;
+  box-shadow: 5px 5px 15px var(--tertiary);
 }
 
 main a {
@@ -194,7 +195,7 @@ main a:hover {
   margin-left: 50px;
   padding: 25px;
   line-height: 1.25;
-  border-radius: 5px;
+  border-radius: 15px;
   box-shadow: 5px 5px 10px var(--tertiary);
   transition-duration: 1s;
 }
@@ -206,7 +207,7 @@ main a:hover {
 .card img {
   margin-bottom: 15px;
   border-radius: 15px;
-  opacity: .5;
+  opacity: 0.5;
   transition-duration: 1s;
 }
 
@@ -249,7 +250,7 @@ main a:hover {
 
 #main-project img {
   max-width: 90%;
-  border-radius: 15px;
+  /* border-radius: 15px; */
   box-shadow: 5px 5px 20px var(--secondary);
   transition-duration: 1s;
 }
@@ -267,7 +268,6 @@ main a:hover {
   width: 100%;
   box-shadow: none;
   transition-duration: 1s;
-  
 }
 
 .card-small img:hover {
@@ -283,11 +283,11 @@ main a:hover {
   text-align: center;
 }
 
-
 /* MEDIA QUERIES */
 /* TABLET VIEW */
 @media screen and (max-width: 1368px) {
-  header h1, footer h2 {
+  header h1,
+  footer h2 {
     font-size: 24px;
   }
 
@@ -295,7 +295,8 @@ main a:hover {
     font-size: 20px;
   }
 
-  header #header-right, footer p {
+  header #header-right,
+  footer p {
     font-size: 14px;
   }
 
@@ -326,5 +327,79 @@ main a:hover {
 
   header #header-right {
     display: none;
+  }
+
+  header nav {
+    padding: 5px 10px 0px 10px;
+  }
+
+  header nav ul li a {
+    font-weight: lighter;
+    font-size: 2.5vw;
+  }
+
+  main h2 {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .about section {
+    justify-content: center;
+    font-size: 14px;
+    padding: 15px;
+    margin: 0 10px 0 10px;
+  }
+
+  .about p {
+    border-radius: 15px;
+  }
+
+  .flexbox {
+    padding: 5px;
+    text-align: center;
+    justify-content: space-between;
+    margin: 0 0px 20px 0px;
+  }
+
+  #main-project {
+    width: 100%;
+  }
+
+  .card-small {
+    width: 39%;
+    border-radius: 10px;
+  }
+
+  .card-small img {
+    border-radius: 5px;
+  }
+
+  .card-small h3 {
+    text-align: center;
+  }
+
+  .card-small p,
+  footer p {
+    font-size: 12px;
+  }
+
+  .contact {
+    text-align: center;
+  }
+
+  .contact section {
+    justify-content: space-around;
+  }
+
+  .contact-info {
+    font-size: 12px;
+    width: 24%;
+    border-radius: 15px;
+    margin: 0 16px;
+    padding: 10px;
+  }
+
+  footer h2 {
+    font-size: 20px;
   }
 }
