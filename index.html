@@ -23,42 +23,46 @@
         </div>
         <nav id="navigation">
             <ul>
-                <li><a href="#about">| About</a></li>
-                <li><a href="#solo-work">| Solo Work</a></li>
-                <li><a href="#group-projects">| Group Projects</a></li>
-                <li><a href="#contact">| Contact</a></li>
-                <li><a href="#">| Resumė</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#solo-work">Solo Work</a></li>
+                <li><a href="#group-projects">Group Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">Resumė</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
         <!-- ABOUT ME -->
-        <article id="about">
-            <h2>| About</h2>
+        <article class="about">
+            <h2 id="about">About</h2>
             <section>
                 <img src="./assets/images/placeholder.png"/>
-                <p>I code <a href="https://github.com/escowin">code</a> and paint <a href="https://escowinart.com">paintings</a>.</p>
+                <p class="card">I code <a href="https://github.com/escowin">code</a> and paint <a href="https://escowinart.com">paintings</a>.</p>
             </section>
         </article>
 
         <!-- SOLO WORK -->
-        <article id="solo-works" class="container">
+        <article class="solo-work">
             <h2 class="item" id="solo-work">Solo Work</h2>
+            <section class="flexbox">
+                <!-- SHOWCASE PROJECT -->
+                <article id="main-project" class="card">
+                    <a href="https://escowin.github.io/escowinart">
+                        <img src="./assets/images/screenshot-escowinart.jpg" alt="Escowin Art Portfolio"/>
+                    </a>
+                    <div class="description">
+                        <h3>Escowin Art</h3>
+                        <p><a href="https://github.com/escowin/escowinart">GitHub Repo</a></p>
+                        <p>html/css</p>
+                    </div>
+                </article>
 
-            <!-- showcase project -->
-            <article class="container card flexbox" id="main-project">
-                <a href="https://escowin.github.io/escowinart">
-                    <img src="./assets/images/screenshot-escowinart.jpg" alt="Escowin Art Portfolio"/>
-                </a>
-                <h3>Escowin Art</h3>
-                <p><a href="https://github.com/escowin/escowinart">GitHub Repo</a></p>
-                <p>html/css</p>
-            </article>
+                <!-- PROJECTS -->
+                <article id="solo-works" class="card">
 
-            <!-- additional projects -->
-            <section class="projects-container container">
-                <!-- HTML/CSS PROJECTS -->
+                </article>
+            </section>
                 <!-- RUN BUDDY -->
                 <article class="item card" id="run-buddy">
                     <a href="https://escowin.github.io/run-buddy/">
