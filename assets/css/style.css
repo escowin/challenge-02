@@ -208,6 +208,13 @@ main a:hover {
 
 .card img {
   margin-bottom: 15px;
+  border-radius: 15px;
+  opacity: .5;
+  transition-duration: 1s;
+}
+
+.card img:hover {
+  opacity: 1;
 }
 
 .card h3 {
@@ -263,7 +270,7 @@ main a:hover {
   width: 100%;
   box-shadow: none;
   transition-duration: 1s;
-  transition-property: box-shadow;
+  
 }
 
 .card-small img:hover {
