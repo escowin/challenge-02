@@ -150,7 +150,9 @@ main h2 {
   background-color: var(--tertiary);
   color: var(--primary);
   font-size: 1.55vw;
-  padding: 10px 25px 10px 25px;
+  padding: 10px 25px;
+  margin: 10px 25px 0 25px;
+  border-radius: 15px;
 }
 
 main a {
@@ -165,6 +167,7 @@ main a:hover {
 
 .about section {
   padding: 25px;
+  margin-left: 50px;
   display: flex;
   align-items: center;
 }
@@ -180,8 +183,8 @@ main a:hover {
 }
 
 .about img:hover {
-  border: 0.5rem solid var(--quaternary);
-  box-shadow: 3px 3px 30px var(--quaternary);
+  /* border: 0.25rem solid var(--quaternary); */
+  box-shadow: 3px 3px 25px var(--quaternary);
 }
 
 /* CARD STYLES */
@@ -191,6 +194,7 @@ main a:hover {
   color: var(--primary);
   margin-left: 50px;
   padding: 25px;
+  line-height: 1.25;
   border-radius: 5px;
   box-shadow: 5px 5px 10px var(--tertiary);
   transition-duration: 1s;
@@ -198,6 +202,14 @@ main a:hover {
 
 .card:hover {
   box-shadow: 0px 0px 30px var(--tertiary);
+}
+
+.card img {
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin-bottom: 5px;
 }
 
 .card a {
@@ -209,29 +221,50 @@ main a:hover {
   text-shadow: 5px 5px 20px var(--tertiary);
 }
 
-/* SOLOR WORK */
+/* SOLO WORK */
 .flexbox {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 25px;
   text-align: center;
+  margin: 0 25px 25px 25px;
+}
+
+#main-project, .card-small {
   margin: 25px;
 }
 
-#main-project, #solo-works {
-  margin: 25px;
-  min-width: 50%;
+#main-project {
+  width: 100%;
 }
 
 #main-project img {
-  max-width: 100%;
+  max-width: 90%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 20px var(--secondary);
+  transition-duration: 1s;
 }
 
-#solo-works {
-  background-color: var(--secondary);
-  padding: 25px;
+#main-project img:hover {
+  box-shadow: 5px 5px 40px var(--quaternary);
+}
+
+
+.card-small {
+  width: 28%;
+}
+
+.card-small img {
+  width: 100%;
   box-shadow: none;
+  transition-duration: 1s;
+  transition-property: box-shadow;
+}
+
+.card-small img:hover {
+  box-shadow: 2px 2px 30px var(--quaternary);
 }
 
 /* CONTACT STYLES */
