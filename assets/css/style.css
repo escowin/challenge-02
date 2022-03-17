@@ -274,8 +274,6 @@ main a:hover {
 
 
 /* CONTACT STYLES */
-/* #contact-info {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-} */
+.contact-info {
+  text-align: center;
+}
