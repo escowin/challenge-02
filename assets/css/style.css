@@ -1,15 +1,3 @@
-/* VISUAL AID, DELETE BEFORE FIN */
-.container {
-  border: 3px solid var(--quaternary);
-  padding: 10px;
-  margin: 5px;
-}
-
-.item {
-  border: 2px solid;
-  padding: 5px;
-}
-
 /* BASE PALETTE & STYLES */
 :root {
   --primary: #e6e6e6;
@@ -42,9 +30,23 @@ h2, h3, h4 {
 
 
 /* HEADER OVERALL*/
+header, footer {
+  background-color: var(--tertiary);
+  color: var(--primary);
+}
+
+header a, footer a {
+  color: var(--primary);
+}
+
+header a:hover, footer a:hover {
+  color: var(--quaternary);
+  text-shadow: 5px 5px 20px var(--tertiary);
+}
+
+
 header {
   /* padding: 20px 35px; */
-  background-color: var(--primary);
   /* display: flex; */
   justify-content: space-between;
   /* flex-wrap: wrap; */
@@ -54,10 +56,6 @@ header {
   top: 0;
   z-index: 9999;
   padding: 10px;
-}
-
-header a, footer a {
-  color: var(--tertiary);
 }
 
 /*  HEADER HEADER */
@@ -116,16 +114,9 @@ header nav ul li a {
   font-size: 1.55vw;
 }
 
-header a:hover {
-  color: var(--quaternary);
-  text-shadow: 5px 5px 20px var(--tertiary);
-  /* background-color: var(--tertiary); */
-  /* box-shadow: 5px 5px 30px var(--secondary); */
-}
 
 /*footer */
 footer {
-  background-color: var(--primary);
   justify-content: center;
   width: 100%;
   padding: 10px 15px;
@@ -133,7 +124,6 @@ footer {
 }
 
 footer h2 {
-  color: var(--tertiary);
   margin: 0;
 }
 
@@ -157,6 +147,18 @@ footer div {
 } */
 
 /* MAIN */
+main {
+  background-color: bisque;
+  display: inline-block;
+  align-items: center;
+}
+
+.flexbox {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  min-width: max-content;
+}
 /* main {
   flex-wrap: wrap;
   justify-content: space-around;
@@ -169,43 +171,10 @@ main a {
   color: var(--tertiary);
 }
 
-#about-me {
-  align-items: stretch;
-}
-#solo-works {
-  text-align: center;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-start;
-  display: inline-block;
-} 
-
-#main-project {
-  width: 40vw;
-}
-
-#main-project img {
-  width: 38vw;
-}
-
-.projects-container {
-  /* width: 60vw; */
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: space-around;
-}
-
-.projects-container img {
-  width: 200px;
-}
-
-.card {
-  margin: 5px;
-}
 
 /* CONTACT STYLES */
-#contact-info {
+/* #contact-info {
   list-style: none;
   display: flex;
   justify-content: space-around;
-}
+} */
