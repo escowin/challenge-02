@@ -8,11 +8,9 @@ Showcasing my work.
 * HTML
 * CSS
 
-## Live URL
-https://escowin.github.io/challenge-02/
-
-## GitHub Repo
-https://github.com/escowin/challenge-02/
+## URLs
+* Live | https://escowin.github.io/challenge-02/
+* Repo | https://github.com/escowin/challenge-02/
 
 ## Contributor
 Edwin Escobar

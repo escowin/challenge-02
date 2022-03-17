@@ -83,14 +83,13 @@ header h1 {
   align-items: center;
 }
 
-#name {
+header h1 {
   padding-right: 10px;
   margin-right: 5px;
   border-right: 2px solid var(--secondary);
 }
 
-#portfolio {
-  border-left: 1px solid var(--tertiary);
+header h2 {
   padding-left: 10px;
   margin-left: 5px;
 }
@@ -282,4 +281,50 @@ main a:hover {
 /* CONTACT STYLES */
 .contact-info {
   text-align: center;
+}
+
+
+/* MEDIA QUERIES */
+/* TABLET VIEW */
+@media screen and (max-width: 1368px) {
+  header h1, footer h2 {
+    font-size: 24px;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  header #header-right, footer p {
+    font-size: 14px;
+  }
+
+  .card-small {
+    width: 42%;
+  }
+
+  .card-small h3 {
+    font-size: 16px;
+  }
+
+  .card-small p {
+    font-size: 15px;
+  }
+}
+
+/* MOBILE VIEW */
+@media screen and (max-width: 844px) {
+  header h1 {
+    font-size: 70%;
+  }
+
+  header h2 {
+    font-size: 50%;
+    padding-left: 5px;
+    margin-left: 2px;
+  }
+
+  header #header-right {
+    display: none;
+  }
 }
