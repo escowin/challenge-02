@@ -60,6 +60,7 @@ header {
   top: 0;
   z-index: 9999;
   padding: 10px;
+  box-shadow: 0 5px 15px var(--tertiary);
 }
 
 /*  HEADER HEADER */
@@ -123,6 +124,8 @@ footer {
   width: 100%;
   padding: 10px 15px;
   text-align: center;
+  box-shadow: 0 -5px 15px var(--tertiary);
+  position: sticky;
 }
 
 footer h2 {
@@ -339,7 +342,7 @@ main a:hover {
   }
 
   main h2 {
-    font-size: 15px;
+    font-size: 1.75vh;
     text-align: center;
   }
 
@@ -363,28 +366,40 @@ main a:hover {
 
   #main-project {
     width: 100%;
+    text-align: left;
+    font-size: 1.5vh;
+  }
+
+  #main-project h3 {
+    font-size: 2vh;
   }
 
   .card-small {
-    width: 39%;
+    width: 100vw;
     border-radius: 10px;
+    display: flex;
+    text-align: left;
+    /* height: fit-content; */
   }
 
   .card-small img {
     border-radius: 5px;
+    height: 90px;
+    width: 160px;
   }
 
-  .card-small h3 {
-    text-align: center;
+  .card-text {
+    flex: flex;
+    padding-left: 20px;
+  }
+
+  .card-text h3 {
+    font-size: 1.5vh;
   }
 
   .card-small p,
   footer p {
-    font-size: 12px;
-  }
-
-  .contact {
-    text-align: center;
+    font-size: 1.25vh;
   }
 
   .contact section {
@@ -392,7 +407,7 @@ main a:hover {
   }
 
   .contact-info {
-    font-size: 12px;
+    font-size: 1.25vh;
     width: 24%;
     border-radius: 15px;
     margin: 0 16px;
@@ -400,6 +415,6 @@ main a:hover {
   }
 
   footer h2 {
-    font-size: 20px;
+    font-size: 1.75vh;
   }
 }
