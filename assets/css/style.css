@@ -319,11 +319,11 @@ main a:hover {
 /* MOBILE VIEW */
 @media screen and (max-width: 844px) {
   header h1 {
-    font-size: 70%;
+    font-size: 1.75vh;
   }
 
   header h2 {
-    font-size: 50%;
+    font-size: 1vh;
     padding-left: 5px;
     margin-left: 2px;
   }
@@ -378,8 +378,6 @@ main a:hover {
     width: 100vw;
     border-radius: 10px;
     display: flex;
-    text-align: left;
-    /* height: fit-content; */
   }
 
   .card-small img {
