@@ -118,7 +118,7 @@ main a:hover {
 }
 
 .wrapper {
-  padding: 10px 50px;
+  padding: 10px 25px;
   background-color: var(--primary);
 }
 
@@ -132,6 +132,9 @@ main a:hover {
 
 #about-container {
   display: flex;
+}
+
+#about-container, .projects {
   padding: 2vh 0;
 }
 
@@ -169,6 +172,38 @@ main a:hover {
 }
 
 /* PROJECTS */
+main * {
+  /* border: 1px solid red; */
+}
+
+.upper-left {
+  border-radius: 70px 15px 15px 0;
+}
+
+.projects {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(4, 22%);
+  grid-row-gap: 2vh;
+}
+
+.project {
+  border-radius: 20px;
+  box-shadow: 10px 10px 40px var(--tertiary)
+}
+
+.screenshot {
+  width: 100%;
+
+}
+.screenshot, .project a {
+  border-radius: inherit;
+}
+
+.highlight {
+  grid-column: span 2;
+  grid-row: span 2;
+}
 
 /* CARD STYLES */
 .card {
