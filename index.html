@@ -5,27 +5,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@200&display=swap" rel="stylesheet">
     <title>Eᴅᴡɪɴ M. Esᴄᴏʙᴀʀ | Pᴏʀᴛғᴏʟɪᴏ</title>
 </head>
 
 <body>
     <!-- HEADER -->
     <header>
-        <div id="header-header">
+        <div id="header">
             <div id="header-left">
-                <h1><a href="#">Edwin M. Escobar</a></h1>
-                <h2>Professional Portfolio</h2>
+                <h1 id="name"><a href="#">Edwin m. escobar</a></h1>
+                <h2 id="title">professional portfolio</h2>
             </div>
             <div id="header-right">
                 <a href="mailto:edwin@escowinart.com">edwin@escowinart.com</a>
-                <p>Austin, TX</p>
+                <p>austin, tx</p>
             </div>
         </div>
         <nav id="navigation">
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#solo-work">Solo Work</a></li>
-                <li><a href="#group-projects">Group Projects</a></li>
+                <li><a href="#solo-work">Solo work</a></li>
+                <li><a href="#group-projects">Group projects</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="./assets/docs/edwin-escobar-resume.pdf" target="_blank">Resumė</a></li>
             </ul>
@@ -35,134 +36,44 @@
     <main>
         <!-- ABOUT ME -->
         <article class="wrapper" id="about">
+            <!-- row1 -->
             <h2 class="subheaders">About</h2>
-
+            <!-- row2 -->
             <section class="content-container" id="about-container">
-                <div id="profile-container">
+                <!-- column 1 -->
+                <div id="profile-pic-container">
                     <a href="#">
                         <img  id="profile-pic" src="./assets/images/profile.jpg" alt="looking at you"/>
                     </a>
-                    <p id="title">
-                        Full-stack web developer
-                    </p>
                 </div>
-                <ul class="card coding-language">Front-end
-                    <li>html</li>
-                    <li>css</li>
-                    <li>javascript</li>
-                </ul>
-
-                <ul class="card">Back-end
-                    <li>node.js</li>
-                    <li></li>
-                    <li></li>
-                </ul>
-
-                <ul class="card">Framework
-                    <li>react.js</li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <!-- column 2 -->
+                <div id="about-text-container">
+                    <h3 class="subheaders" id="job-title">Full-stack web developer</h3>
+                    <p class="code">
+                        Front-end | html css javascript
+                        <br/>
+                        Back-end | node.js express.js sql
+                        <br/>
+                        libraries | jquery bootstrap
+                        <br/>
+                        framework | handlebars.js react.js redux
+                        <br/>
+                </div>
             </section>
         </article>
 
         <!-- SOLO WORK -->
-        <article class="solo-work">
-            <h2 id="solo-work">Solo Work</h2>
-            <section class="flexbox">
-                <!-- SHOWCASE PROJECT -->
-                <article id="main-project" class="card">
-                    <a href="https://escowin.github.io/escowinart" target="_blank">
-                        <img src="./assets/images/app-escowinart.jpg" alt="Escowin Art Portfolio"/>
-                    </a>
-                    
-                    <h3>Escowin Art | Art Portfolio </h3>
-                    <p>&mdash; <a href="https://github.com/escowin/escowinart" target="_blank">GitHub Repo</a></p>
-                    <p>&mdash; html/css</p>
+        <article class="wrapper" id="solo-projects">
+            <h2>Solo projects</h2>
+            <section class="content-container flex-grid" id="solo-container">
+                <div id="highlight">
+                    <img src="./assets/images/app-escowinart.jpg" alt="art portfolio">
+                    <h3 class="title">Escowin art</h3>
+                </div>
 
-                </article>
+                <div class="flex" id="projects">
 
-                <!-- SOLO PORTFOLIO -->
-                <!-- Run Buddy -->
-                <article class="card card-small">
-                    <a href="https://escowin.github.io/run-buddy/" target="_blank">
-                        <img src="./assets/images/app-run-buddy.jpg" alt="Run Buddy Homepage"/>
-                    </a>
-                    <div class="card-text">
-                        <h3>Run Buddy</h3>
-                        <p>&mdash; <a href="https://github.com/escowin/run-buddy/" target="_blank">GitHub Repo</a></p>
-                        <p>&mdash; html / css</p>
-                    </div>
-                </article>
-
-                <!-- Horiseon -->
-                <article class="card card-small">
-                    <a href="https://escowin.github.io/challenge-01/" target="_blank">
-                        <img src="./assets/images/app-horiseon.jpg" alt="Horiseon Homepage"/>
-                    </a>
-                    <div class="card-text">
-                        <h3>Horiseon</h3>
-                        <p>&mdash; <a href="https://github.com/escowin/challenge-01/" target="_blank">GitHub Repo</a></p>
-                        <p>&mdash; html / css</p>
-                    </div>
-                </article>
-
-                <!-- Professional Portfolio -->
-                <article class="card card-small">
-                    <a href="#" target="_blank">
-                        <img src="./assets/images/app-portfolio.jpg" alt="click here for recursion"/>
-                    </a>
-                    <div class="card-text">
-                        <h3>Professional Portfolio</h3>
-                        <p>&mdash; <a href="https://github.com/escowin/challenge-02/" target="_blank">GitHub Repo</a></p>
-                        <p>&mdash; html / css</p>
-                    </div>
-                </article>
-
-                <!-- Robot Gladiators -->
-                <article class="card card-small">
-                    <a href="https://escowin.github.io/robot-gladiators/" target="_blank">
-                        <img src="./assets/images/app-robot-gladiators.jpg" alt="Turn-base robotic gladitorial deathmatches"/>
-                    </a>
-                    <div class="card-text">
-                        <h3>Robot Gladiators</h3>
-                        <p>&mdash; <a href="https://github.com/escowin/robot-gladiators/" target="_blank">GitHub Repo</a></p>
-                        <p>&mdash; javascript</p>
-                    </div>   
-                </article>
-
-                <article class="card card-small">
-                    <a href="https://escowin.github.io/challenge-03/" target="_blank">
-                        <img src="./assets/images/app-password-generator.jpg" alt="Step right up to randomly generate the best passwords in all of GitHub"/>
-                    </a>
-                    <div class="card-text">
-                        <h3>Password Generator</h3>
-                        <p>&mdash; <a href="https://github.com/escowin/challenge-03/" target="_blank">GitHub Repo</a></p>
-                        <p>&mdash; html / css / javascript</p>
-                    </div>
-                </article>
-
-                <article class="card card-small">
-                    <a href="https://escowin.github.io/challenge-04/" target="_blank">
-                        <img src="./assets/images/app-coding-quiz.jpg" alt="Test your coding knowledge here!"/>
-                    </a>
-                    <div class="card-text">
-                        <h3>Coding Quiz</h3>
-                        <p>&mdash; <a href="https://github.com/escowin/challenge-04/" target="_blank">GitHub Repo</a></p>
-                        <p>&mdash; html / css / javascript</p>
-                    </div>
-                </article>
-
-                <article class="card card-small">
-                    <a href="https://escowin.github.io/challenge-05/" target="_blank">
-                        <img src="./assets/images/app-work-day-scheduler.jpg" alt="Plan your day, plan your life"/>
-                    </a>
-                    <div class="card-text">
-                        <h3>Work Day Scheduler</h3>
-                        <p>&mdash; <a href="https://github.com/escowin/challenge-05/" target="_blank">GitHub Repo</a></p>
-                        <p>&mdash; html / css / javascipt</p>
-                    </div>
-                </article>
+                </div>
             </section>
         </article>
 
