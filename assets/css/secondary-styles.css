@@ -1,10 +1,10 @@
-main * {
-    /* border: 1px solid red; */
+ * {
+    border: 1px solid red;
 }
 
-.section {
-    padding: .5vh 1vw;
-    justify-content: space-between;
+/* resume main */
+#resume-body {
+    padding: 1%;
 }
 
 /* resume header */
@@ -12,6 +12,7 @@ main * {
     grid-template-columns: repeat(3, 33%);
     justify-content: space-between;
     display: flex;
+    padding-bottom: 2vh;
 }
 
 .center {
@@ -22,13 +23,76 @@ main * {
     text-align: end;
 }
 
-/* expierence */
-
-.row {
-    display: flex;
-    justify-content: space-between;
+/* resume main */
+.resume-subhead {
+    border-top: 2px solid var(--tertiary);
+    border-bottom: 2px solid var(--tertiary);
+    border-left: 2px solid var(--tertiary);
+    text-indent: 1%;
+    padding: 10px;
 }
 
-.job {
+.section {
+    border-right: 2px solid var(--tertiary);
+}
+
+/* skills */
+#skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: inline-flex;
+    align-items: center;
+    padding-left: 2%;
+}
+
+.row h3 {
+    width: 10%;
+}
+
+.row p {
+    flex-grow: 1;
+}
+
+/* subsections */
+.exp-row, .edu-row, .end-row {
+    display: flex;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    padding-top: .25vh;
+    padding-bottom: .25vh;
+}
+
+/* expierence */
+.year {
+    width: 5%;
+}
+
+.work {
     display: inherit;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.position, .company, .school, .event {
+    flex-grow: 1;
+}
+
+.details, .location {
+    text-indent: 2%;
+    color: rgba(40, 40, 44, .8);
+    font-size: smaller;
+}
+
+.edu-row {
+    align-items: center;
+}
+
+#resume-footer {
+    text-align: center;
+    /* border-top: 2px solid var(--tertiary); */
+    padding: 10px 0;
 }
