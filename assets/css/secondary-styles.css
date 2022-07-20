@@ -1,5 +1,5 @@
  * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 /* resume main */
@@ -87,12 +87,7 @@
     font-size: smaller;
 }
 
-.edu-row {
-    align-items: center;
-}
-
 #resume-footer {
     text-align: center;
-    /* border-top: 2px solid var(--tertiary); */
     padding: 10px 0;
 }
