@@ -1,21 +1,26 @@
-# Challenge-02
-Advanced CSS Challenge: Professional Portfolio
 
-## Purpose
-Showcase my work in a visually appealing fashion.
+# professional-portfolio
 
-## Built With
-* HTML
-* CSS
+  * [Repo](https://github.com/escowin/professional-portfolio)
 
-## URLs
-* LIVE | https://escowin.github.io/challenge-02/
-* REPO | https://github.com/escowin/challenge-02/
+  * [Live URL](https://escowin.github.io/professional-portfolio)
+  
+## Description
+
+  Professional portfolio showcasing my full-stack web dev skillset.
+
+## Languages
+
+  CSS, HTML
 
 ## Screenshot
-<img src="assets\images\app-portfolio.jpg" width="450">
 
-## Contributor
-Edwin Escobar
+  [screenshot](./assets/images/app-professional-portfolio.jpg)
 
-### &copy; 2022 Escowin Art
+## Author
+
+  Edwin Escobar
+
+  * [Email](mailto:edwin@escowinart.com)
+
+  * [GitHub](https://github.com/escowin)
