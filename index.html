@@ -5,212 +5,147 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@200&display=swap" rel="stylesheet">
     <title>Eᴅᴡɪɴ M. Esᴄᴏʙᴀʀ | Pᴏʀᴛғᴏʟɪᴏ</title>
 </head>
 
 <body>
     <!-- HEADER -->
     <header>
-        <section id="header-header">
-            <div id="header-left">
-                <h1><a href="#">Edwin M. Escobar</a></h1>
-                <h2>Professional Portfolio</h2>
-            </div>
-            <div id="header-right">
-                <a href="mailto:edwin@escowinart.com">edwin@escowinart.com</a>
-                <p>Austin, TX</p>
-            </div>
-        </section>
+        <div id="header">
+            <h1 id="name"><a href="./index.html">Edwin m. escobar</a></h1>
+            <h2 id="title">professional portfolio</h2>
+        </div>
         <nav id="navigation">
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#solo-work">Solo Work</a></li>
-                <li><a href="#group-projects">Group Projects</a></li>
+                <li><a href="#solo-work">Solo work</a></li>
+                <li><a href="#collaborations">Collaborations</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="./assets/docs/edwin-escobar-resume.pdf" target="_blank">Resumė</a></li>
+                <li><a href="./resume.html">Resumė</a></li>
             </ul>
         </nav>
     </header>
     
-    <main>
+    <main id="portfolio-main">
         <!-- ABOUT ME -->
-        <article class="about">
-            <h2 id="about">About</h2>
-            <section>
-                <a href="#">
-                <img src="./assets/images/profile.jpg"/></a>
-                <p class="card">I code <a href="https://github.com/escowin" target="_blank">code</a> and paint <a href="https://escowinart.com" target="_blank">paintings</a>.</p>
+        <article class="wrapper" id="about">
+            <h2 class="subheaders">About</h2>
+            <section class="content-container" id="about-container">
+                <aside id="profile-pic-container">
+                    <a href="#">
+                        <img  id="profile-pic" src="./assets/images/profile.jpg" alt="looking at you"/>
+                    </a>
+                </aside>
+                <div id="about-text-container">
+                    <h3 class="subheaders" id="job-title">Full-stack web developer</h3>
+                    <div class="stack-container top">
+                        <h4 class="stack">Front end</h4>
+                        <p class="code">
+                            html&emsp;
+                            css&emsp;
+                            bootstrap&emsp;
+                            javascript&emsp;
+                            es6&emsp;
+                            api&emsp;
+                            json&emsp;
+                            jquery&emsp;
+                            handlebars.js&emsp;
+                            react.js&emsp;
+                            redux&emsp;
+                            graphql
+                        </p>
+                    </div>
+                    <div class="stack-container">
+                        <h4 class="stack">Back end</h4>
+                        <p class="code">
+                            sapi&emsp;
+                            node.js&emsp;
+                            express.js&emsp;
+                            mongodb&emsp;
+                            mysql&emsp;
+                            nosql&emsp;
+                            heroku&emsp;
+                            insomnia&emsp;
+                            mvc&emsp;
+                            oop
+                        </p>
+                    </div>
+                </div>
             </section>
         </article>
 
         <!-- SOLO WORK -->
-        <article class="solo-work">
-            <h2 id="solo-work">Solo Work</h2>
-            <section class="flexbox">
-                <!-- SHOWCASE PROJECT -->
-                <article id="main-project" class="card">
-                    <a href="https://escowin.github.io/escowinart" target="_blank">
-                        <img src="./assets/images/app-escowinart.jpg" alt="Escowin Art Portfolio"/>
-                    </a>
-                    
-                    <h3>Escowin Art | Art Portfolio </h3>
-                    <p>&mdash; <a href="https://escowinart.com" target="_blank">GitHub Repo</a></p>
-                    <p>&mdash; html/css</p>
+        <article class="wrapper" id="solo-work">
+            <h2 class="subheaders upper-left">Solo work</h2>
+            <section class="projects">
+                <a class="project highlight" href="#" target="_blank">
+                    <img src="./assets/images/app-professional-portfolio.jpg" class="screenshot" alt="recursion" />
+                    <h3 class="project-text">professional portfolio</h3>
+                </a>
 
-                </article>
+                <a class="project" href="https://escowinart.com" target="_blank">
+                    <img src="./assets/images/app-escowinart.jpg" class="screenshot" alt="escowin art" />
+                    <h4 class="project-text">Escowin art</h4>
+                </a>
 
-                <!-- SOLO PORTFOLIO -->
-                <!-- Professional Portfolio -->
-                <article class="card card-small">
-                    <a href="#" target="_blank">
-                        <img src="./assets/images/app-portfolio.jpg" alt="click here for recursion"/>
-                    </a>
-                    <div class="card-text">
-                        <h3>Professional Portfolio</h3>
-                        <p>&mdash; <a href="/" target="_blank">GitHub Repo</a></p>
-                        <p>&mdash; html / css</p>
-                    </div>
-                </article>
+                <a class="project" href="https://github.com/escowin/readme-generator" target="_blank">
+                    <img src="./assets/images/app-readme-generator.jpg" class="screenshot" alt="node.js app" />
+                    <h4 class="project-text">Readme generator</h4>
+                </a>
 
-                <!-- Run Buddy -->
-                <article class="card card-small">
-                    <a href="https://escowin.github.io/run-buddy/" target="_blank">
-                        <img src="./assets/images/app-run-buddy.jpg" alt="Run Buddy Homepage"/>
-                    </a>
-                    <div class="card-text">
-                        <h3>Run Buddy</h3>
-                        <p>&mdash; <a href="https://github.com/escowin/run-buddy/" target="_blank">GitHub Repo</a></p>
-                        <p>&mdash; html / css</p>
-                    </div>
-                </article>
+                <a class="project" href="https://escowin.github.io/taskinator/" target="_blank">
+                    <img src="./assets/images/app-taskinator.jpg" class="screenshot" alt="javascript kanban board" />
+                    <h4 class="project-text">Taskinator</h4>
+                </a>
 
-                <!-- Horiseon -->
-                <article class="card card-small">
-                    <a href="https://escowin.github.io/challenge-01/" target="_blank">
-                        <img src="./assets/images/app-horiseon.jpg" alt="Horiseon Homepage"/>
-                    </a>
-                    <div class="card-text">
-                        <h3>Horiseon</h3>
-                        <p>&mdash; <a href="https://github.com/escowin/challenge-01/" target="_blank">GitHub Repo</a></p>
-                        <p>&mdash; html / css</p>
-                    </div>
-                </article>
-
-                <!-- Robot Gladiators -->
-                <article class="card card-small">
-                    <a href="https://escowin.github.io/robot-gladiators/" target="_blank">
-                        <img src="./assets/images/app-robot-gladiators.jpg" alt="Turn-base robotic gladitorial deathmatches"/>
-                    </a>
-                    <div class="card-text">
-                        <h3>Robot Gladiators</h3>
-                        <p>&mdash; <a href="https://github.com/escowin/robot-gladiators/" target="_blank">GitHub Repo</a></p>
-                        <p>&mdash; javascript</p>
-                    </div>   
-                </article>
-
-                <!-- Password Generator -->
-                <article class="card card-small">
-                    <a href="https://escowin.github.io/challenge-03/" target="_blank">
-                        <img src="./assets/images/app-password-generator.jpg" alt="Step right up to randomly generate the best passwords in all of GitHub"/>
-                    </a>
-                    <div class="card-text">
-                        <h3>Password Generator</h3>
-                        <p>&mdash; <a href="https://github.com/escowin/challenge-03/" target="_blank">GitHub Repo</a></p>
-                        <p>&mdash; html / css / javascript</p>
-                    </div>
-                </article>
-
-                <!-- Coding Quiz -->
-                <article class="card card-small">
-                    <a href="https://escowin.github.io/challenge-04/" target="_blank">
-                        <img src="./assets/images/app-coding-quiz.jpg" alt="Test your coding knowledge here!"/>
-                    </a>
-                    <div class="card-text">
-                        <h3>Coding Quiz</h3>
-                        <p>&mdash; <a href="https://github.com/escowin/challenge-04/" target="_blank">GitHub Repo</a></p>
-                        <p>&mdash; html / css / javascript</p>
-                    </div>
-                </article>
-
-                <!-- Workday Scheduler -->
-                <article class="card card-small">
-                    <a href="https://escowin.github.io/challenge-05/" target="_blank">
-                        <img src="./assets/images/app-work-day-scheduler.jpg" alt="Plan your day, plan your life"/>
-                    </a>
-                    <div class="card-text">
-                        <h3>Work Day Scheduler</h3>
-                        <p>&mdash; <a href="https://github.com/escowin/challenge-05/" target="_blank">GitHub Repo</a></p>
-                        <p>&mdash; html / css / javascipt</p>
-                    </div>
-                </article>
+                <a class="project" href="https://escowin.github.io/challenge-04/" target="_blank">
+                    <img src="./assets/images/app-coding-quiz.jpg" class="screenshot" alt="escowin art" />
+                    <h4 class="project-text">Coding quiz</h4>
+                </a>
             </section>
         </article>
 
         <!-- GROUP PROJECTS -->
-        <article class="group-projects">
-            <h2 id="group-projects">Group Projects</h2>
+        <article class="wrapper" id="collaborations">
+            <h2 class="subheaders upper-left">Collaborations</h2>
+            <section class="projects">
+                <!-- smart home -->
+                <a class="project highlight" href="https://young-earth-27956.herokuapp.com/" target="_blank">
+                    <img src="./assets/images/app-smart-home.jpg" class="screenshot" alt="smart home, mern stack app" />
+                    <h4 class="project-text">Smart home</h4>
+                </a>
 
-            <section class="flexbox">
-                <!-- PROJECT 1 -->
-                <article class="card card-small group">
-                    <a href="https://chewbakkah.github.io/RavenclawG-2/" target="_blank">
-                        <img src="./assets/images/app-raven-home.jpg"/>
-                    </a>
-                    <div class="card-text">
-                        <h3>Raven Home by Ravenclaw g-2</h3>
-                        <p class="role">&mdash; Back End Developer</p>
-                        <p>&mdash; <a href="https://github.com/Chewbakkah/RavenclawG-2" target="_blank">GitHub Repo</a></p>
-                    </div>
-                </article>
+                <!-- raven home -->
+                <a class="project" href="https://escowin.github.io/RavenclawG-2/" target="_blank">
+                    <img src="./assets/images/app-raven-home.jpg" class="screenshot" alt="front-end widgets app" />
+                    <h4 class="project-text">Raven home</h4>
+                </a>
 
-                <!-- PROJECT 2 -->
-                <article class="card card-small">
-                    <a href="https://stormy-fjord-57144.herokuapp.com/" target="_blank">
-                        <img src="./assets/images/app-auction-house.jpg"/>
-                    </a>
-                    <div class="card-text">
-                        <h3>Auction House by Crow Talons</h3>
-                        <p class="role">&mdash; Front End Lead</p>
-                        <p>&mdash; <a href="https://github.com/jarrettcoding/auction-house" target="_blank">GitHub Repo</a></p>
-                    </div>
-                </article>
-
-                <!-- PROJECT 3 -->
-                <article class="card card-small">
-                    <a href="#">
-                        <img src="./assets/images/placeholder.png"/>
-                    </a>
-                    <div class="card-text">
-                        <h3>Smart Home by Algorithm Unlock </h3>
-                        <p class="role">&mdash; Front-end Lead</p>
-                        <p>&mdash; <a href="#">GitHub Repo</a></p>
-                    </div>
-                </article>
+                <!-- auction house -->
+                <a class="project" href="https://stormy-fjord-57144.herokuapp.com/" target="_blank">
+                    <img src="./assets/images/app-auction-house.jpg" class="screenshot" alt="auction house app" />
+                    <h4 class="project-text">Auction house</h4>
+                </a>
             </section>
         </article>
-
+        
         <!-- CONTACT -->
-        <article class="contact">
-            <h2 id="contact">Contact</h2>
-            <section class="flexbox">
-                <a href="mailto:edwin@escowinart.com" class="contact-info card card-small">
-                    E-mail
-                </a>
+        <article class="wrapper" id="contact">
+            <h2 class="subheaders upper-left" id="contact">Contact</h2>
+            <section class="contact-container">
+                <a href="mailto:edwin@escowinart.com" class="contact-info">E-mail</a>
 
-                <a href="https://github.com/escowin" class="contact-info card card-small" target="_blank">
-                    GitHub
-                </a>
+                <a href="https://github.com/escowin" class="contact-info" target="_blank">Github</a>
                 
-                <a href="https://www.linkedin.com/in/escowin/" class="contact-info card card-small" target="_blank">
-                    LinkedIn
-                </a>
+                <a href="https://www.linkedin.com/in/escowin/" class="contact-info" target="_blank">Linkedin</a>
         </article>
     </main>
 
     <!-- FOOTER -->
     <footer>
-        <h2>&mdash; Portfolio Fin &mdash;</h2>
-        <p>
+        <h2>&mdash; Portfolio fin &mdash;</h2>
+        <p class="copyright">
             &copy; 2022 <a href="https://escowinart.com" target="_blank">Escowin Art</a>
         </p>
     </footer>

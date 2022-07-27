@@ -1,0 +1,103 @@
+ * {
+    font-weight: 500;
+}
+
+body {
+    background: var(--primary);
+}
+
+/* resume main */
+#resume-body {
+    padding: 1rem;
+}
+
+/* resume header */
+#resume-header {
+    grid-template-columns: repeat(3, 33%);
+    justify-content: space-between;
+    display: flex;
+    padding-bottom: 2vh;
+}
+
+.center {
+    text-align: center;
+}
+
+.right, .right-text, .language {
+    text-align: end;
+}
+
+/* resume footer */
+#resume-footer {
+    text-align: center;
+    padding: 10px 0;
+    border: 2px solid var(--tertiary);
+    border-top: none;
+}
+
+/* resume main */
+.resume-subhead {
+    border-top: 2px solid var(--tertiary);
+    border-bottom: 2px solid var(--tertiary);
+    border-left: 2px solid var(--tertiary);
+    text-indent: 1%;
+    padding: 10px;
+}
+
+/* subsection formatting*/
+.section {
+    border-right: 2px solid var(--tertiary);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.row {
+    display: flex;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    padding-top: .25vh;
+    padding-bottom: .25vh;
+}
+
+/* all columns */
+#resume-header article, .left-text, .right-text {
+    flex-grow: 1;
+}
+
+/* left columns */
+.year {
+    width: 5%;
+}
+
+/* right columns */
+.language, .text-wrapper {
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: center;
+    padding-left: 1%;
+}
+
+.text-wrapper {
+    display: inherit;
+}
+
+/* span classes */
+.print {
+    display: none;
+}
+
+.details {
+    padding-left: 2%;
+    color: rgba(40, 40, 44, .8);
+    font-size: smaller;
+}
+
+@media print {
+    header, footer, .email {
+        display: none;
+    }
+
+    .print {
+        display: inherit;
+    }
+}
