@@ -34,7 +34,7 @@ footer {
 
 header a,
 footer a {
-  color: var(--primary);
+  color: inherit;
 }
 
 header a:hover,
@@ -48,6 +48,12 @@ footer {
   padding: 10px 0;
   text-align: center;
   box-shadow: 0 -5px 15px var(--tertiary);
+  font-size: small;
+}
+
+.copyright {
+  font-size: smaller;
+  color: var(--secondary);
 }
 
 /*  header */
@@ -211,4 +217,23 @@ main a:hover {
 
 .project-text {
   padding-bottom: 2%;
+}
+
+.contact-container {
+  padding: 2% 0;
+  justify-content: space-between;
+  display: flex;
+}
+
+.contact-info {
+  background-color: var(--tertiary);
+  color: var(--primary);
+  border-radius: 10px;
+  padding: 1% 10%;
+  box-shadow: 10px 10px 40px var(--tertiary);
+}
+
+.contact-info:hover {
+  background-color: var(--secondary);
+  box-shadow: 10px 10px 40px var(--quaternary);
 }
