@@ -1,10 +1,18 @@
  * {
-    /* border: 1px solid red; */
+    font-weight: 500;
+}
+
+body {
+    background: var(--primary);
+}
+
+.print {
+    display: none;
 }
 
 /* resume main */
 #resume-body {
-    padding: 1%;
+    padding: 1rem;
 }
 
 /* resume header */
@@ -23,6 +31,14 @@
     text-align: end;
 }
 
+/* resume footer */
+#resume-footer {
+    text-align: center;
+    padding: 10px 0;
+    border: 2px solid var(--tertiary);
+    border-top: none;
+}
+
 /* resume main */
 .resume-subhead {
     border-top: 2px solid var(--tertiary);
@@ -34,30 +50,35 @@
 
 .section {
     border-right: 2px solid var(--tertiary);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 /* skills */
 #skills {
-    display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    padding-bottom: 2vh;
 }
 
-.row {
+.stack {
     display: inline-flex;
     align-items: center;
-    padding-left: 2%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
 }
 
-.row h3 {
+.stack-type {
     width: 10%;
 }
 
-.row p {
-    flex-grow: 1;
+.language {
+    padding-left: 2%;
 }
 
 /* subsections */
-.exp-row, .edu-row, .end-row {
+.row {
     display: flex;
     padding-left: 1.5%;
     padding-right: 1.5%;
@@ -87,7 +108,12 @@
     font-size: smaller;
 }
 
-#resume-footer {
-    text-align: center;
-    padding: 10px 0;
+@media print {
+    header, footer, .email {
+        display: none;
+    }
+
+    .print {
+        display: inherit;
+    }
 }
