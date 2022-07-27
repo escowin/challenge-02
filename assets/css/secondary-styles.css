@@ -6,10 +6,6 @@ body {
     background: var(--primary);
 }
 
-.print {
-    display: none;
-}
-
 /* resume main */
 #resume-body {
     padding: 1rem;
@@ -27,7 +23,7 @@ body {
     text-align: center;
 }
 
-.right {
+.right, .right-text, .language {
     text-align: end;
 }
 
@@ -48,36 +44,13 @@ body {
     padding: 10px;
 }
 
+/* subsection formatting*/
 .section {
     border-right: 2px solid var(--tertiary);
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
-/* skills */
-#skills {
-    flex-direction: column;
-    justify-content: space-between;
-    display: flex;
-    padding-bottom: 2vh;
-}
-
-.stack {
-    display: inline-flex;
-    align-items: center;
-    padding-left: 1.5%;
-    padding-right: 1.5%;
-}
-
-.stack-type {
-    width: 10%;
-}
-
-.language {
-    padding-left: 2%;
-}
-
-/* subsections */
 .row {
     display: flex;
     padding-left: 1.5%;
@@ -86,24 +59,35 @@ body {
     padding-bottom: .25vh;
 }
 
-/* expierence */
+/* all columns */
+#resume-header article, .left-text, .right-text {
+    flex-grow: 1;
+}
+
+/* left columns */
 .year {
     width: 5%;
 }
 
-.work {
-    display: inherit;
+/* right columns */
+.language, .text-wrapper {
     justify-content: space-between;
     flex-grow: 1;
     align-items: center;
+    padding-left: 1%;
 }
 
-.position, .company, .school, .event {
-    flex-grow: 1;
+.text-wrapper {
+    display: inherit;
 }
 
-.details, .location {
-    text-indent: 2%;
+/* span classes */
+.print {
+    display: none;
+}
+
+.details {
+    padding-left: 2%;
     color: rgba(40, 40, 44, .8);
     font-size: smaller;
 }

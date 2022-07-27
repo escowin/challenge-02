@@ -64,14 +64,7 @@ header {
 
 #header {
   display: flex;
-  justify-content: space-between;
   margin-bottom: .25vh;
-  align-items: center;
-}
-
-#header-left {
-  flex-wrap: wrap;
-  display: inline-flex;
   align-items: center;
 }
 
@@ -86,10 +79,10 @@ header {
   margin-left: 5px;
 }
 
-#header-right {
+/* #header-right {
   text-align: end;
   align-items: center;
-}
+} */
 
 /* NAVIGATION */
 #navigation ul {
@@ -172,10 +165,6 @@ main a:hover {
 }
 
 /* PROJECTS */
-main * {
-  /* border: 1px solid red; */
-}
-
 .upper-left {
   border-radius: 70px 15px 15px 0;
 }
