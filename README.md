@@ -15,7 +15,7 @@
 
 ## Screenshot
 
-  [screenshot](./assets/images/app-professional-portfolio.jpg)
+  ![screenshot](./assets/images/app-professional-portfolio.jpg)
 
 ## Author
 
