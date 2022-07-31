@@ -101,3 +101,65 @@ body {
         display: inherit;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .mobile-hide {
+        display: none;
+    }
+
+    .section {
+        padding: 2vw 0;
+    }
+
+    #skills .row {
+        flex-direction: column;
+    }
+
+    .language {
+        padding-left: 5vw;
+        text-align: start;
+        font-size: .8rem;
+    }
+
+    .year {
+        width: 12vw;
+    }
+
+    .text-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-left: 2vw;
+    }
+
+    .right-text {
+        font-size: 1rem;
+        text-align: start;
+    }
+
+    .left-text, #endeavors .right-text .details {
+        font-size: .8rem;
+        padding-left: 2vw;
+    }
+    
+    .left-text, .right-text {
+        width: 100%;
+    }
+
+    #expierence .left-text, #education .left-text, #endeavors .left-text {
+        order: 2;
+    }
+
+    #education .details, #expierence .right-text .details {
+        display: none;
+    }
+
+    #education .left-text {
+        font-size: .8rem;
+    }
+
+    #education .right-text {
+        font-size: 1rem;
+    }
+}
+
