@@ -66,14 +66,13 @@ body {
 
 /* left columns */
 .year {
-    width: 5%;
+    width: auto;
 }
 
 /* right columns */
 .language, .text-wrapper {
     justify-content: space-between;
     flex-grow: 1;
-    align-items: center;
     padding-left: 1%;
 }
 
@@ -92,6 +91,7 @@ body {
     font-size: smaller;
 }
 
+/* display.print */
 @media print {
     header, footer, .email {
         display: none;
@@ -100,9 +100,51 @@ body {
     .print {
         display: inherit;
     }
+    
+    .print-hide {
+        display: none;
+    }
+    
+    .text-wrapper {
+        align-items: flex-start;
+    }
+
+    #skills .row {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        padding-right: 0;
+    }
+
+    #skills .left-text {
+        width: 10vw;
+    }
+
 }
 
+/* display.small-laptop */
+@media screen and (max-width: 1025px) {
+    .small-laptop {
+        display: block;
+    }
+
+    #skills .row {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        padding-right: 0;
+    }
+}
+
+/* display.tablet */
+@media screen and (max-width: 770px) {
+
+}
+
+/* display.mobile */
 @media screen and (max-width: 500px) {
+    * {
+        /* border: 1px red solid; */
+    }
+
     .mobile-hide {
         display: none;
     }
@@ -112,7 +154,14 @@ body {
     }
 
     #skills .row {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        padding-right: 0;
+        justify-content: flex-start;
+    }
+
+    #skills .left-text {
+        width: 20vw;
     }
 
     .language {
@@ -121,14 +170,9 @@ body {
         font-size: .8rem;
     }
 
-    .year {
-        width: 12vw;
-    }
-
     .text-wrapper {
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
         padding-left: 2vw;
     }
 
@@ -143,7 +187,7 @@ body {
     }
     
     .left-text, .right-text {
-        width: 100%;
+        /* width: 100%; */
     }
 
     #expierence .left-text, #education .left-text, #endeavors .left-text {
