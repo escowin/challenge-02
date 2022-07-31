@@ -93,10 +93,6 @@ body {
 
 /* display.print */
 @media print {
-    * {
-        /* border: 1px red solid; */
-    }
-
     header, footer, .email {
         display: none;
     }
@@ -143,7 +139,12 @@ body {
 
 }
 
+/* display.mobile */
 @media screen and (max-width: 500px) {
+    * {
+        /* border: 1px red solid; */
+    }
+
     .mobile-hide {
         display: none;
     }
@@ -153,7 +154,14 @@ body {
     }
 
     #skills .row {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        padding-right: 0;
+        justify-content: flex-start;
+    }
+
+    #skills .left-text {
+        width: 20vw;
     }
 
     .language {
@@ -179,7 +187,7 @@ body {
     }
     
     .left-text, .right-text {
-        width: 100%;
+        /* width: 100%; */
     }
 
     #expierence .left-text, #education .left-text, #endeavors .left-text {
