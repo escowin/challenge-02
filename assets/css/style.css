@@ -310,7 +310,12 @@ main a:hover {
   }
 
   .subheaders {
+    border-radius: 70px 70px 10px 10px;
     font-size: .9rem;
+  }
+
+  #about h2 {
+    border-radius: 10px 10px 70px 70px;
   }
 
   #about-container {
@@ -340,13 +345,12 @@ main a:hover {
     flex-direction: column;
     align-items: center;
   }
-
+  
   #job-title {
-    /* box-shadow: 0 0 15px var(--tertiary); */
-    border-radius: 70px 70px 10px 10px;
     justify-self: center;
     width: 95%;
     padding-left: 4vw;
+    border-radius: 5px;
   }
 
   .stack-container {
@@ -365,10 +369,23 @@ main a:hover {
 
   .projects {
     grid-template-columns: repeat(2, 48%);
+    grid-row-gap: 5vw;
+  }
+
+  .project {
+    box-shadow: 0 10px 20px var(--tertiary);
+  }
+
+  .project:hover {
+    box-shadow: 0 10px 30px 2px var(--quaternary);
   }
 
   .highlight {
     grid-column: span 2;
+  }
+
+  .highlight .project-text {
+    font-size: 1.25rem;
   }
 
   .contact-info {
