@@ -12,6 +12,11 @@
   font-family: 'Lexend Mega', Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 200;
   font-variant: small-caps;
+  box-sizing: border-box;
+}
+
+.mobile-show {
+  display: none;
 }
 
 a {
@@ -20,7 +25,6 @@ a {
 }
 
 body {
-  box-sizing: border-box;
   color: var(--tertiary);
   background-color: var(--secondary);
 }
@@ -71,7 +75,7 @@ header {
 #header {
   display: flex;
   margin-bottom: .25vh;
-  align-items: center;
+  align-items: baseline;
 }
 
 #name {
@@ -236,4 +240,148 @@ main a:hover {
 .contact-info:hover {
   background-color: var(--secondary);
   box-shadow: 10px 10px 40px var(--quaternary);
+}
+
+/* display.tablet */
+@media screen and (max-width: 768px) {
+  header {
+    padding-bottom: .5vw;
+  }
+
+  #name {
+    font-size: 1.5rem;
+  }
+
+  #title {
+    font-size: 1.25rem;
+  }
+
+  .subheaders {
+    font-size: 1.2rem;
+  }
+
+  .stack-container {
+    display: block;
+  }
+
+  .code {
+    padding-left: 4vw;
+  }
+
+  .projects {
+    grid-template-columns: repeat(3, 31%);
+    grid-gap: 2vw;
+  }
+
+  .project-text {
+    font-size: 1rem;
+  }
+
+  .highlight .project-text {
+    font-size: 1.5rem;
+  }
+}
+
+/* display.mobile */
+@media screen and (max-width: 500px) {
+  .mobile-show {
+    display: block;
+  }
+
+  header {
+    padding: 1vw;
+  }
+
+  #header {
+    margin-bottom: 1vw;
+  }
+
+  #name {
+    font-size: 1.25rem;
+  }
+
+  #title {
+    font-size: .8rem;
+    border-left: 1px solid var(--secondary);
+  }
+
+  #navigation, .stack, .contact-container {
+    font-size: .8rem;
+  }
+
+  .subheaders {
+    font-size: .9rem;
+  }
+
+  #about-container {
+    display: block;
+  }
+
+  #profile-pic-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2vw;
+    padding: 0 2vw;
+  }
+
+  #profile-pic {
+    width: 30vw;
+    height: auto;
+  }
+
+  #profile-text-container {
+    padding-left: 2vw;
+    flex-grow: 1;
+  }
+
+  #about-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #job-title {
+    /* box-shadow: 0 0 15px var(--tertiary); */
+    border-radius: 70px 70px 10px 10px;
+    justify-self: center;
+    width: 95%;
+    padding-left: 4vw;
+  }
+
+  .stack-container {
+    display: block;
+  }
+
+  .top {
+    margin-top: 2.25vw;
+  }
+
+  .code {
+    padding-left: 10vw;
+    line-height: 1.25;
+    font-size: .8rem;
+  }
+
+  .projects {
+    grid-template-columns: repeat(2, 48%);
+  }
+
+  .highlight {
+    grid-column: span 2;
+  }
+
+  .contact-info {
+    width: 25vw;
+    padding: 1vw 2vw;
+    text-align: center;
+  }
+
+  footer {
+    padding: 5px 0;
+  }
+
+  footer h2 {
+    font-size: 1rem;
+  }
 }
