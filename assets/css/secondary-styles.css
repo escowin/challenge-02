@@ -59,6 +59,10 @@ body {
     padding-bottom: .25vh;
 }
 
+#skills .row {
+    padding-right: 0;
+}
+
 /* all columns */
 #resume-header article, .left-text, .right-text {
     flex-grow: 1;
@@ -112,7 +116,6 @@ body {
     #skills .row {
         display: grid;
         grid-template-columns: repeat(2, auto);
-        padding-right: 0;
     }
 
     #skills .left-text {
@@ -130,21 +133,11 @@ body {
     #skills .row {
         display: grid;
         grid-template-columns: repeat(2, auto);
-        padding-right: 0;
     }
-}
-
-/* display.tablet */
-@media screen and (max-width: 770px) {
-
 }
 
 /* display.mobile */
 @media screen and (max-width: 500px) {
-    * {
-        /* border: 1px red solid; */
-    }
-
     .mobile-hide {
         display: none;
     }
@@ -156,7 +149,6 @@ body {
     #skills .row {
         display: grid;
         grid-template-columns: repeat(2, auto);
-        padding-right: 0;
         justify-content: flex-start;
     }
 
@@ -186,10 +178,6 @@ body {
         padding-left: 2vw;
     }
     
-    .left-text, .right-text {
-        /* width: 100%; */
-    }
-
     #expierence .left-text, #education .left-text, #endeavors .left-text {
         order: 2;
     }
