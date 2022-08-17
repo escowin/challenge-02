@@ -15,6 +15,11 @@
   box-sizing: border-box;
 }
 
+#css-portfolio {
+  background-image: url('../images/app-professional-portfolio.jpg');
+  background-size: cover;
+}
+
 .mobile-show {
   display: none;
 }
