@@ -349,8 +349,16 @@ main a:hover {
 
 /* display.mobile */
 @media screen and (max-width: 500px) {
+  #escowinart {
+    background-image: url('../images/small/escowinart.jpg');
+  }
+
   .mobile-show {
     display: block;
+  }
+
+  .mobile-hide {
+    display: none;
   }
 
   header {
@@ -376,7 +384,7 @@ main a:hover {
 
   .subheaders {
     border-radius: 70px 70px 10px 10px;
-    font-size: .9rem;
+    font-size: 1.25rem;
   }
 
   #about h2 {
@@ -431,7 +439,7 @@ main a:hover {
     line-height: 1.25;
     font-size: .8rem;
   }
-
+  /* to-do | grow template size while maintaining scale */
   .projects {
     grid-template-columns: repeat(2, 1fr);
     gap: 5vw;
@@ -439,14 +447,21 @@ main a:hover {
 
   .project {
     box-shadow: 0 10px 20px var(--tertiary);
+    background-size: cover;
   }
 
   .project:hover {
     box-shadow: 0 10px 30px 2px var(--quaternary);
   }
 
+  .project-text {
+    width: 95%;
+    font-size: 80%;
+  }
+
   .highlight {
-    grid-column: span 2;
+    grid-column: span 1;
+    grid-row: span 2;
   }
 
   .highlight .project-text {
