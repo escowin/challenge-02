@@ -20,27 +20,39 @@
   box-sizing: border-box;
 }
 
-#css-portfolio {
-  background-image: url('../images/app-professional-portfolio.jpg');
-}
-#escowinart {
-  background-image: url('../images/app-escowinart.jpg');
-}
-#readme-generator {
-  background-image: url('../images/app-readme-generator.jpg');
-}
+
 #coding-quiz {
   background-image: url('../images/app-coding-quiz.jpg');
 }
+
+#css-portfolio {
+  background-image: url('../images/app-professional-portfolio.jpg');
+}
+
+#escowinart {
+  background-image: url('../images/app-escowinart.jpg');
+}
+
+#readme-generator {
+  background-image: url('../images/app-readme-generator.jpg');
+}
+
+#solar-weather {
+  background-image: url('../images/app-solar-weather.jpg');
+}
+
 #taskinator {
   background-image: url('../images/app-taskinator.jpg');
 }
+
 #smart-home {
   background-image: url('../images/app-smart-home.jpg');
 }
+
 #raven-home {
   background-image: url('../images/app-raven-home.jpg');
 }
+
 #auction-house {
   background-image: url('../images/app-auction-house.jpg');
 }
@@ -243,13 +255,12 @@ main a:hover {
   border-radius: 0 .25rem .25rem 0;
 }
 
-.project:hover .project-text {
-  width: 100%;
-  border-radius: 0;
-  box-shadow: 5px 0 2vw var(--quaternary);
+.project-text h3 {
+  font-size: 1.15rem;
 }
 
 .project-text p {
+  font-size: .75rem;
   padding-left: 1vw;
 }
 
@@ -258,20 +269,23 @@ main a:hover {
   opacity: 100%;
 }
 
+.project:hover .project-text {
+  width: 100%;
+  border-radius: 0;
+  box-shadow: 5px 0 2vw var(--quaternary);
+}
+
 .highlight {
   grid-column: span 2;
   grid-row: span 2;
 }
 
-.project-text {
-  padding-bottom: 2%;
+.highlight h3 {
+  font-size: 1.5rem;
 }
 
-.project-text h3 {
-  font-size: 1.15rem;
-}
-.project-text p {
-  font-size: .95rem;
+.highlight p {
+  font-size: 1rem;
 }
 
 .contact-container {
