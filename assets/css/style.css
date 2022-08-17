@@ -4,6 +4,7 @@
   --secondary: #9b97979c;
   --tertiary: #28282c;
   --quaternary: #cf0b0b;
+  --transparent: rgba(22, 22, 26, 0.9);
 }
 
 * {
@@ -13,6 +14,47 @@
   font-weight: 200;
   font-variant: small-caps;
   box-sizing: border-box;
+}
+
+*:hover, *::before *::after {
+  box-sizing: border-box;
+}
+
+
+#coding-quiz {
+  background-image: url('../images/app-coding-quiz.jpg');
+}
+
+#css-portfolio {
+  background-image: url('../images/app-professional-portfolio.jpg');
+}
+
+#escowinart {
+  background-image: url('../images/app-escowinart.jpg');
+}
+
+#readme-generator {
+  background-image: url('../images/app-readme-generator.jpg');
+}
+
+#solar-weather {
+  background-image: url('../images/app-solar-weather.jpg');
+}
+
+#taskinator {
+  background-image: url('../images/app-taskinator.jpg');
+}
+
+#smart-home {
+  background-image: url('../images/app-smart-home.jpg');
+}
+
+#raven-home {
+  background-image: url('../images/app-raven-home.jpg');
+}
+
+#auction-house {
+  background-image: url('../images/app-auction-house.jpg');
 }
 
 .mobile-show {
@@ -107,7 +149,7 @@ header {
 
 main a {
   text-decoration: none;
-  color: var(--tertiary);
+  color: inherit;
 }
 
 main a:hover {
@@ -186,19 +228,40 @@ main a:hover {
 .projects {
   display: grid;
   justify-content: space-between;
-  grid-template-columns: repeat(4, 22%);
-  grid-row-gap: 3vh;
+  grid-template-columns: repeat(4, 23%);
+  grid-gap: 1vw;
 }
 
 .project {
+  display: flex;
+  background-size: auto 100%;
   color: var(--primary);
   border-radius: 20px;
-  box-shadow: 10px 10px 40px var(--tertiary);
+  box-shadow: 10px 10px 40px black;
   background-color: var(--tertiary);
   opacity: 95%;
   transition-duration: 2s;
-  justify-content: center;
-  text-align: center;
+  align-items: center;
+  padding: 20% 0;
+  opacity: 95%;
+}
+
+.project-text {
+  background-color: var(--transparent);
+  padding: .25vw 0 .25vw 2vw;
+  width: 80%;
+  box-shadow: 0 0 2vw var(--tertiary);
+  transition: 1s;
+  border-radius: 0 .25rem .25rem 0;
+}
+
+.project-text h3 {
+  font-size: 1.15rem;
+}
+
+.project-text p {
+  font-size: .75rem;
+  padding-left: 1vw;
 }
 
 .project:hover {
@@ -206,12 +269,10 @@ main a:hover {
   opacity: 100%;
 }
 
-.screenshot {
+.project:hover .project-text {
   width: 100%;
-  height: auto;
-}
-.screenshot, .project-text {
-  border-radius: 20px 20px 0 0;
+  border-radius: 0;
+  box-shadow: 5px 0 2vw var(--quaternary);
 }
 
 .highlight {
@@ -219,8 +280,12 @@ main a:hover {
   grid-row: span 2;
 }
 
-.project-text {
-  padding-bottom: 2%;
+.highlight h3 {
+  font-size: 1.5rem;
+}
+
+.highlight p {
+  font-size: 1rem;
 }
 
 .contact-container {
@@ -269,8 +334,8 @@ main a:hover {
   }
 
   .projects {
-    grid-template-columns: repeat(3, 31%);
-    grid-gap: 2vw;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5vw;
   }
 
   .project-text {
@@ -368,8 +433,8 @@ main a:hover {
   }
 
   .projects {
-    grid-template-columns: repeat(2, 48%);
-    grid-row-gap: 5vw;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5vw;
   }
 
   .project {
