@@ -77,22 +77,23 @@ body {
 /* header & footer */
 header,
 footer,
-.subheader {
+.subheader,
+.contact-info {
   color: var(--offwhite);
   background-color: var(--offblack);
-}
-
-header a:active,
-header a:hover,
-footer a:active,
-footer a:hover {
-  color: var(--quaternary);
-  text-shadow: var(--gray);
 }
 
 footer {
   padding: 5px 0;
   text-align: center;
+}
+
+footer h2 {
+  font-size: 1.25rem;
+}
+
+.copyright {
+  font-size: .5rem;
 }
 
 header {
@@ -149,8 +150,8 @@ header {
   padding: .75vw 5vw;
 }
 
-.content-container {
-  padding: 2.5vw 2vw;
+.content {
+  padding: 2.5vw 0;
 }
 
 /* main.about */
@@ -197,22 +198,84 @@ header {
   padding-left: 1vw;
 }
 
-main * {
-  border: 1px dotted red;
-}
-
 /* main.projects */
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1vw;
+  gap: 2vw;
 }
 
 .project {
+  opacity: 95%;
   border-radius: 1rem;
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  box-shadow: var(--box-shadow) var(--offblack);
+  transition: 1s;
+}
+
+.project-text {
+  color: var(--offwhite);
+  background: linear-gradient(0.25turn, rgba(22, 18, 18, 0.437), var(--transparent));
+  border-radius: 0 1rem 1rem 0;
+  padding: .12rem 0 .12rem 1vw;
+  width: 95%;
+  height: 5rem;
+  font-size: .9rem;
+  transition: 1s;
+}
+
+.project-text p {
+  font-size: .75rem;
 }
 
 .highlight {
   grid-column: span 2;
-  grid-row: span 4;
+  grid-row: span 2;
+}
+
+.highlight .project-text {
+  height: auto;
+}
+
+/* main.contact */
+
+main * {
+  /* border: 1px dotted red; */
+}
+
+#contact-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-info {
+  padding: .75vh 3vw;
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow) var(--offblack);
+}
+
+/* pseudo classes */
+a:active,
+a:hover {
+  color: var(--quaternary);
+  text-shadow: 0 0 1vw var(--quaternary);
+}
+
+.project:active {
+  box-shadow: var(--box-shadow) var(--quaternary);
+  opacity: 100%;
+}
+
+.project:active .project-text,
+.project:hover .project-text {
+  width: 100%;
+  border-radius: 0 .75rem .75rem 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .projects {
+    gap: 1vw;
+  }
 }
