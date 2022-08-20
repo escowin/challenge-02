@@ -31,8 +31,10 @@ body {
 #resume-footer {
     text-align: center;
     padding: 10px 0;
-    border: 2px solid var(--offblack);
+    border: 2.5px solid;
     border-top: none;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, rgba(255, 255, 255, 0), var(--offblack));
 }
 
 /* resume main */
@@ -47,8 +49,7 @@ body {
 /* subsection formatting*/
 .section {
     border-right: 2px solid var(--offblack);
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem 0 1rem 0;
 }
 
 .row {
@@ -62,7 +63,6 @@ body {
 #skills .row {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    /* padding-right: 0; */
 }
 
 /* all columns */
@@ -113,6 +113,29 @@ body {
     
     .print-hide {
         display: none;
+    }
+
+    #resume-header {
+        padding-bottom: 1rem;
+    }
+
+    #resume-header {
+        flex-direction: row-reverse;
+    }
+
+    #resume-header .left {
+        text-align: right;
+    }
+
+    #resume-header .right {
+        text-align: left;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+    #resume-footer {
+        padding: .25rem 0;
     }
     
     .text-wrapper {
