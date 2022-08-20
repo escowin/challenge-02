@@ -7,7 +7,7 @@
   
 ## Description
 
-  Professional portfolio showcasing my full-stack web dev skillset.
+  Professional portfolio showcasing my work.
 
 ## Languages
 
