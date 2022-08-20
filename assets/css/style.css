@@ -3,9 +3,9 @@
   --offwhite: rgb(230, 230, 230);
   --offblack: rgb(40, 40, 44);
   --gray: rgba(155, 151, 151, 0.612);
-  --quaternary: rgb(207, 11, 11);
+  --accent: rgb(207, 11, 11);
   --transparent: rgba(22, 22, 26, 0.9);
-  --box-shadow: 0 0 1rem;
+  --box-shadow: 0 .25vw .75rem;
 }
 
 * {
@@ -150,6 +150,10 @@ header {
   padding: .75vw 5vw;
 }
 
+.upper-left {
+  border-radius: 70px 15px 15px 0;
+}
+
 .content {
   padding: 2.5vw 0;
 }
@@ -168,6 +172,7 @@ header {
   height: 9rem;
   width: 9rem;
   border-radius:  50% 50%;
+  border: .25vw solid var(--offblack);
   box-shadow: var(--box-shadow) var(--offblack);
   display: flex;
   align-items: center;
@@ -181,6 +186,7 @@ header {
   margin: -25% 0 0 0;
   padding: 0 0 0 1vw;
   width: 95%;
+  text-shadow: 0 0 1vw var(--transparent);
   font-size: .9rem;
 }
 
@@ -223,6 +229,7 @@ header {
   width: 95%;
   height: 5rem;
   font-size: .9rem;
+  text-shadow: 0 0 1vw var(--transparent);
   transition: 1s;
 }
 
@@ -240,11 +247,6 @@ header {
 }
 
 /* main.contact */
-
-main * {
-  /* border: 1px dotted red; */
-}
-
 #contact-links {
   display: flex;
   justify-content: space-around;
@@ -259,12 +261,12 @@ main * {
 /* pseudo classes */
 a:active,
 a:hover {
-  color: var(--quaternary);
-  text-shadow: 0 0 1vw var(--quaternary);
+  color: var(--accent);
+  text-shadow: 0 0 1vw var(--accent);
 }
 
 .project:active {
-  box-shadow: var(--box-shadow) var(--quaternary);
+  box-shadow: var(--box-shadow) var(--accent);
   opacity: 100%;
 }
 
@@ -274,8 +276,136 @@ a:hover {
   border-radius: 0 .75rem .75rem 0;
 }
 
+/* display.tablet */
+@media screen and (min-width: 768px) {
+  #name {
+    font-size: 1.5rem;
+  }
+
+  #project, #about-text-container h3 {
+    font-size: 1.25rem;
+  }
+
+  #about-text-container h4 {
+    font-size: 1rem;
+  }
+
+  #about-text-container p {
+    font-size: .9rem;
+    padding-left: .25vw;
+  }
+
+  #about-text-container div {
+    padding-left: 1vw;
+  }
+
+  #about-pic-container p {
+    margin: 0;
+  }
+
+  .project-text {
+    height: auto;
+  }
+
+  .contact-info {
+    padding: 1vw 5vw;
+  }
+}
+
+/* display.small-desktop */
 @media screen and (min-width: 1024px) {
+  header {
+    padding: .5vw 1vw;
+  }
+
+  #header {
+    margin-bottom: .25vw;
+  }
+
+  #project {
+    font-size: 1rem;
+    padding-left: 1.25vw;
+    margin-left: .75vw;
+  }
+
+  #navigation ul {
+    font-size: 1rem;
+  }
+  
+  .copyright {
+    font-size: .75rem;
+  }
+  
+  .subheader {
+    padding: .25vw 2.5vw;
+  }
+  
+  #about-pic-container p {
+    font-size: 1.125rem;
+    margin-top: -10%;
+    padding-right: 2vw;
+    width: 85%;
+  }
+
+  #about-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1vw;
+    align-items: center;
+  }
+
+  #about-text-container {
+    grid-column: span 4;
+  }
+
+  #about-pic-container {
+    width: 12.5rem;
+    height: 12.5rem;
+    margin: 0 2vw;
+  }
+
+  #about-text-container {
+    margin-top: -2.5%;
+  }
+
   .projects {
     gap: 1vw;
+  }
+
+  .project {
+    min-height: 25vh;
+  }
+
+  .project-text {
+    width: 75%;
+  }
+
+  #contact-links {
+    justify-content: space-between;
+  }
+}
+
+/* display.large-desktop */
+@media screen and (min-width: 1440px) {
+  /* typography */
+  #name {
+    font-size: 1.75rem;
+  }
+
+  #navigation ul,
+  .subheader,
+  #about-pic-container p,
+  #about-text-container h3,
+  .project-text h3 {
+    font-size: 1.5rem;
+  }
+
+  #about-text-container h4 {
+    font-size: 1.25rem;
+  }
+
+  #about-text-container p,
+  .project-text p {
+    font-size: 1.125rem;
   }
 }
