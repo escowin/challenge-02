@@ -37,7 +37,7 @@ body::-webkit-scrollbar {
 }
 
 #escowinart {
-  background-image: url('../images/app-escowinart.jpg');
+  background-image: url('../images/large/escowinart.jpg');
 }
 
 #readme-generator {
@@ -250,6 +250,7 @@ header {
 .highlight {
   grid-column: span 2;
   grid-row: span 2;
+  background-size: cover;
 }
 
 .highlight .project-text {
