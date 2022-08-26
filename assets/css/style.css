@@ -7,17 +7,21 @@
   --box-shadow: 0 .25vw 4vw;
 }
 
-* {
+*, *::before, *::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+* {
   font-family: 'Lexend Mega', Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 200;
   font-variant: small-caps;
-  box-sizing: border-box;
 }
 
-*:hover, *::before *::after {
-  box-sizing: border-box;
+/* scrollbar */
+body::-webkit-scrollbar {
+  display: none;
 }
 
 #password-generator {
