@@ -24,10 +24,6 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-#password-generator {
-  background-image: url('../images/small/password-generator.jpg');
-}
-
 #coding-quiz {
   background-image: url('../images/app-coding-quiz.jpg');
 }
@@ -37,11 +33,18 @@ body::-webkit-scrollbar {
 }
 
 #escowinart {
-  background-image: url('../images/large/escowinart.jpg');
+  background-image: url('../images/small/escowinart.jpg');
+  background-size: cover;
+}
+
+#password-generator {
+  background-image: url('../images/small/password-generator.jpg');
+  background-size: cover;
 }
 
 #readme-generator {
-  background-image: url('../images/app-readme-generator.jpg');
+  background-image: url('../images/small/readme-generator.jpg');
+  background-size: cover;
 }
 
 #solar-weather {
@@ -326,7 +329,15 @@ a:hover {
 @media screen and (min-width: 1024px) {
   #css-portfolio {
     background-image: url('../images/large/css-portfolio.jpg');
-  }  
+  }
+  #password-generator {
+    background-image: url('../images/large/password-generator.jpg');
+    background-position: center;
+  }
+
+  #readme-generator {
+    background-image: url('../images/large/readme-generator.jpg');
+  }
 
   #about .content {
     padding: 1vw 0;
@@ -393,6 +404,7 @@ a:hover {
 
   .project {
     min-height: 25vh;
+    background-size: cover;
   }
 
   .project-text {
