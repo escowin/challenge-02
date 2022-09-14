@@ -37,22 +37,18 @@ body::-webkit-scrollbar {
 
 #escowinart {
   background-image: url('../images/small/escowinart.jpg');
-  background-size: cover;
 }
 
 #password-generator {
   background-image: url('../images/small/password-generator.jpg');
-  background-size: cover;
 }
 
 #readme-generator {
   background-image: url('../images/small/readme-generator.jpg');
-  background-size: cover;
 }
 
 #solar-weather {
   background-image: url('../images/small/solar-weather.jpg');
-  background-size: cover;
 }
 
 #taskinator {
@@ -136,6 +132,8 @@ header {
   margin-left: 1.15vw;
   padding-left: 2.5vw;
   border-left: 1px solid var(--gray);
+  background-size: cover;
+  background-position: center;
 }
 
 #navigation ul {
@@ -222,7 +220,7 @@ header {
 #about-text-container p {
   font-size: .75rem;
   word-spacing: .5rem;
-  padding-left: 1vw;
+  padding-left: 1rem;
 }
 
 /* main.projects */
@@ -240,6 +238,8 @@ header {
   align-items: center;
   box-shadow: var(--box-shadow) var(--offblack);
   transition: 1s;
+  background-size: cover;
+  background-position: center;
 }
 
 .project-text {
@@ -346,9 +346,12 @@ a:hover {
     background-image: url('../images/large/css-portfolio.jpg');
   }
 
+  #escowinart {
+    background-image: url('../images/large/escowinart.jpg');
+  }
+
   #password-generator {
     background-image: url('../images/large/password-generator.jpg');
-    background-position: center;
   }
 
   #readme-generator {
@@ -419,12 +422,12 @@ a:hover {
   }
 
   .projects {
+    grid-template-columns: repeat(4, 1fr);
     gap: 1vw;
   }
 
   .project {
     min-height: 25vh;
-    background-size: cover;
   }
 
   .project-text {
