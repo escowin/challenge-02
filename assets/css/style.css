@@ -27,12 +27,16 @@ body::-webkit-scrollbar {
 }
 
 /* screenshots */
+#bluestrawberry {
+  background-image: url('../images/small/bluestrawberry.jpg');
+}
+
 #coding-quiz {
   background-image: url('../images/app-coding-quiz.jpg');
 }
 
 #css-portfolio {
-  background-image: url('../images/large/css-portfolio.jpg');
+  background-image: url('../images/small/css-portfolio.jpg');
 }
 
 #escowinart {
@@ -342,6 +346,10 @@ a:hover {
   }
   
   /* screenshots */
+  #bluestrawberry {
+    background-image: url('../images/large/bluestrawberry.jpg');
+  }
+
   #css-portfolio {
     background-image: url('../images/large/css-portfolio.jpg');
   }
