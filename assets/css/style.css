@@ -39,6 +39,10 @@ body::-webkit-scrollbar {
   background-image: url('../images/small/css-portfolio.jpg');
 }
 
+#day-planner {
+  background-image: url('../images/small/day-planner.jpg');
+}
+
 #escowinart {
   background-image: url('../images/small/escowinart.jpg');
 }
@@ -354,6 +358,10 @@ a:hover {
     background-image: url('../images/large/css-portfolio.jpg');
   }
 
+  #day-planner {
+    background-image: url('../images/large/day-planner.jpg');
+  }
+  
   #escowinart {
     background-image: url('../images/large/escowinart.jpg');
   }
@@ -439,7 +447,7 @@ a:hover {
   }
 
   .project-text {
-    width: 75%;
+    width: 80%;
   }
 
   #contact-links {
