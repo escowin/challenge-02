@@ -63,6 +63,10 @@ body::-webkit-scrollbar {
   background-image: url('../images/app-taskinator.jpg');
 }
 
+#weather-dashboard {
+  background-image: url('../images/small/weather-dashboard.jpg');
+}
+
 #smart-home {
   background-image: url('../images/app-smart-home.jpg');
 }
@@ -376,6 +380,10 @@ a:hover {
 
   #solar-weather {
     background-image: url('../images/large/solar-weather.jpg');
+  }
+
+  #weather-dashboard {
+    background-image: url('../images/large/weather-dashboard.jpg');
   }
 
   #about .content {
