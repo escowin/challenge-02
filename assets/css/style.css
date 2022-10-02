@@ -26,7 +26,7 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-/* screenshots */
+/* screenshots.solo */
 #bluestrawberry {
   background-image: url('../images/small/bluestrawberry.jpg');
 }
@@ -51,6 +51,10 @@ body::-webkit-scrollbar {
   background-image: url('../images/small/password-generator.jpg');
 }
 
+#portfolio-generator {
+  background-image: url('../images/small/portfolio-generator.jpg');
+}
+
 #readme-generator {
   background-image: url('../images/small/readme-generator.jpg');
 }
@@ -67,6 +71,7 @@ body::-webkit-scrollbar {
   background-image: url('../images/small/weather-dashboard.jpg');
 }
 
+/* screenshots.collabs */
 #smart-home {
   background-image: url('../images/app-smart-home.jpg');
 }
@@ -372,6 +377,10 @@ a:hover {
 
   #password-generator {
     background-image: url('../images/large/password-generator.jpg');
+  }
+
+  #portfolio-generator {
+    background-image: url('../images/large/portfolio-generator.jpg');
   }
 
   #readme-generator {
