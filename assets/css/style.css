@@ -67,6 +67,10 @@ body::-webkit-scrollbar {
   background-image: url('../images/app-taskinator.jpg');
 }
 
+#team-profile-generator {
+  background-image: url('../images/small/team-profile-generator.jpg');
+}
+
 #weather-dashboard {
   background-image: url('../images/small/weather-dashboard.jpg');
 }
@@ -265,7 +269,7 @@ header {
   border-radius: 0 1rem 1rem 0;
   padding: .12rem 0 .12rem 1vw;
   width: 95%;
-  height: 5rem;
+  min-height: 5rem;
   font-size: .9rem;
   text-shadow: 0 0 1vw var(--offblack);
   transition: 1s;
@@ -317,6 +321,18 @@ a:hover {
 
 /* display.tablet */
 @media screen and (min-width: 768px) {
+  #portfolio-generator {
+    background-image: url('../images/medium/portfolio-generator.jpg');
+  }
+
+  #team-profile-generator {
+    background-image: url('../images/medium/team-profile-generator.jpg');
+  }
+
+  #weather-dashboard {
+    background-image: url('../images/medium/weather-dashboard.jpg');
+  }
+
   #name {
     font-size: 1.5rem;
   }
@@ -389,6 +405,10 @@ a:hover {
 
   #solar-weather {
     background-image: url('../images/large/solar-weather.jpg');
+  }
+
+  #team-profile-generator {
+    background-image: url('../images/large/team-profile-generator.jpg');
   }
 
   #weather-dashboard {
