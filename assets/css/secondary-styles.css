@@ -119,16 +119,7 @@ body {
         padding-bottom: 1rem;
     }
 
-    #resume-header {
-        flex-direction: row-reverse;
-    }
-
-    #resume-header .left {
-        text-align: right;
-    }
-
     #resume-header .right {
-        text-align: left;
         display: flex;
         flex-direction: column-reverse;
         justify-content: flex-end;
@@ -161,7 +152,10 @@ body {
 
     #skills .row {
         display: grid;
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: 1fr 3fr;
+    }
+    .language {
+        text-align: start;
     }
 }
 
