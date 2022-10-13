@@ -142,6 +142,11 @@ body {
         width: 10vw;
     }
 
+    .row {
+        padding-top: .185vh;
+        padding-bottom: .185vh;
+    }
+
 }
 
 /* display.small-laptop */
