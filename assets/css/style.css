@@ -32,7 +32,7 @@ body::-webkit-scrollbar {
 }
 
 #coding-quiz {
-  background-image: url('../images/app-coding-quiz.jpg');
+  background-image: url('../images/small/coding-quiz.jpg');
 }
 
 #css-portfolio {
@@ -321,6 +321,10 @@ a:hover {
 
 /* display.tablet */
 @media screen and (min-width: 768px) {
+  #coding-quiz {
+    background-image: url('../images/medium/coding-quiz.jpg');
+  }
+
   #portfolio-generator {
     background-image: url('../images/medium/portfolio-generator.jpg');
   }
@@ -379,6 +383,10 @@ a:hover {
     background-image: url('../images/large/bluestrawberry.jpg');
   }
 
+  #coding-quiz {
+    background-image: url('../images/large/coding-quiz.jpg');
+  }
+  
   #css-portfolio {
     background-image: url('../images/large/css-portfolio.jpg');
   }
