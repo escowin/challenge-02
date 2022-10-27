@@ -200,7 +200,7 @@ header {
   display: grid;
   grid-template-columns: repeat(2, auto);
   gap: 2vw;
-  margin:
+  /* margin: */
   /* align-items: center; */
 }
 

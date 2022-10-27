@@ -23,7 +23,7 @@ body {
     text-align: center;
 }
 
-.right, .right-text, .language {
+.right, .right-text {
     text-align: end;
 }
 
@@ -60,9 +60,12 @@ body {
     padding-bottom: .25vh;
 }
 
-#skills .row {
+#skills {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(1, auto 1fr);
+    gap: .25rem 1rem;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
 }
 
 /* all columns */
@@ -76,10 +79,10 @@ body {
 }
 
 /* right columns */
-.language {
+.skillset {
     word-spacing: .75rem;
 }
-.language,
+
 .text-wrapper {
     justify-content: space-between;
     flex-grow: 1;
@@ -99,6 +102,12 @@ body {
     padding-left: 2%;
     color: rgba(40, 40, 44, .8);
     font-size: smaller;
+}
+
+.exp {
+    font-size: .65rem;
+    text-align: end;
+    color: rgba(40, 40, 44, .75);
 }
 
 /* display.print */
@@ -135,7 +144,7 @@ body {
 
     #skills .row {
         display: grid;
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: 20% 80%;
     }
 
     #skills .left-text {
@@ -146,21 +155,17 @@ body {
         padding-top: .185vh;
         padding-bottom: .185vh;
     }
-
 }
 
 /* display.small-laptop */
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1024px) {
     .small-laptop {
         display: block;
     }
 
     #skills .row {
         display: grid;
-        grid-template-columns: 1fr 3fr;
-    }
-    .language {
-        text-align: start;
+        grid-template-columns: 15% 85%;
     }
 }
 
@@ -172,22 +177,6 @@ body {
 
     .section {
         padding: 2vw 0;
-    }
-
-    #skills .row {
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        justify-content: flex-start;
-    }
-
-    #skills .left-text {
-        width: 20vw;
-    }
-
-    .language {
-        padding-left: 5vw;
-        text-align: start;
-        font-size: .8rem;
     }
 
     .text-wrapper {
