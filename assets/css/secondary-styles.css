@@ -27,14 +27,17 @@ body {
     text-align: end;
 }
 
+* {
+    /* border: 1px dotted blue; */
+}
 /* resume footer */
 #resume-footer {
     text-align: center;
-    padding: 10px 0;
+    padding: 0;
     /* border: 2.5px solid; */
-    border-top: none;
-    border-right: 2px solid var(--offblack);
-    border-bottom: 2px solid var(--offblack);
+    /* border-bottom: none; */
+    /* border-right: 2px solid var(--offblack); */
+    border-top: 2px solid var(--offblack);
     /* border-image-slice: 1;
     border-image-source: linear-gradient(to right, rgba(255, 255, 255, 0), var(--offblack)); */
 }
@@ -100,11 +103,24 @@ body {
     display: none;
 }
 
+.bold {
+    font-weight: 600;
+}
+
+.year {
+    font-weight: 600;
+}
 .details {
     padding-left: 2%;
     color: rgba(40, 40, 44, .8);
     font-size: smaller;
 }
+
+.role {
+    list-style-type: '･ ';
+    padding-left: 2rem;
+}
+
 
 .exp {
     font-size: .65rem;
@@ -154,8 +170,8 @@ body {
     }
 
     .row {
-        padding-top: .185vh;
-        padding-bottom: .185vh;
+        padding-top: .15vh;
+        padding-bottom: .15vh;
     }
 }
 
