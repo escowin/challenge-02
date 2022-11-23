@@ -1,5 +1,5 @@
 // data
-const apps = [
+const portfolio = [
     {
         name: "Escowin art",
         id: "escowinart",
@@ -44,10 +44,28 @@ const apps = [
 
 // logic
 function displayPortfolio(apps) {
-    // filter the app array to produce two new arrays (solo work & collaborations) depending on collaboration boolean value
     soloWork = [];
     collaborations = [];
-    console.log(apps);
+
+    // groups apps in two new arrays based on whether or not its a collaborative effort
+    for (let i = 0; i < apps.length; i++) {
+        if (apps[i].collaboration === false) {
+            soloWork.push(apps[i])
+        } else {
+            collaborations.push(apps[i])
+        }
+    }
+
+    displaySoloWork(soloWork);
+    displayCollaborations(collaborations);
+};
+
+function displaySoloWork(soloWork) {
+    console.log(soloWork);
+};
+
+function displayCollaborations(collaborations) {
+    console.log(collaborations);
 };
 
 function currentYear() {
@@ -58,4 +76,4 @@ function currentYear() {
 
 // calls
 currentYear();
-displayPortfolio(apps);
+displayPortfolio(portfolio);
