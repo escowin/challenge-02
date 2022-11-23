@@ -1,78 +1,94 @@
-// data
-const portfolio = [
-    {
-        name: "Escowin art",
-        id: "escowinart",
-        repo: "https://github.com/escowin/escowinart",
-        liveUrl: "https://escowinart.com/",
-        languages: "html css js",
-        dialects: "jquery",
-        highlight: false,
-        collaboration: true
-    },
-    {
-        name: "Bluestrawberry",
-        id: "bluestrawberry",
-        repo: "https://github.com/escowin/bluestrawberry",
-        liveUrl: "https://escowin.github.io/bluestrawberry",
-        languages: "css js es6",
-        dialects: "react.js",
-        highlight: true,
-        collaboration: false
-    },
-    {
-        name: "Solar weather",
-        id: "solar-weather",
-        repo: "https://github.com/escowin/solar-weather-app",
-        liveUrl: "https://escowin.github.io/solar-weather-app",
-        languages: "html css js api",
-        dialects: "jquery moment",
-        highlight: false,
-        collaboration: false
-    },
-    {
-        name: "team profile generator",
-        id: "team-profile-generator",
-        repo: "https://github.com/escowin/team-profile-generator",
-        liveUrl: "",
-        languages: "html css js api",
-        dialects: "jquery moment",
-        highlight: false,
-        collaboration: false
-    },
-];
+// console.log(portfolio)
 
 // logic
+function randomize(arr) {
+  return arr.sort(() => Math.random() - 0.5);
+}
+
 function displayPortfolio(apps) {
-    soloWork = [];
-    collaborations = [];
+  // shuffle
+  let shuffledArr = randomize(apps);
+  // console.log(shuffledArr)
+  let soloWork = [];
+  let collaborations = [];
 
-    // groups apps in two new arrays based on whether or not its a collaborative effort
-    for (let i = 0; i < apps.length; i++) {
-        if (apps[i].collaboration === false) {
-            soloWork.push(apps[i])
-        } else {
-            collaborations.push(apps[i])
-        }
+  // groups apps in two new arrays based on whether or not its a collaborative effort
+  for (let i = 0; i < shuffledArr.length; i++) {
+    if (shuffledArr[i].collaboration === false) {
+      soloWork.push(shuffledArr[i]);
+    } else {
+      collaborations.push(shuffledArr[i]);
     }
+  }
 
-    displaySoloWork(soloWork);
-    displayCollaborations(collaborations);
-};
+  let soloTemplate = displaySoloWork(soloWork);
+  // displayCollaborations(collaborations);
+
+  console.log(soloTemplate)
+}
 
 function displaySoloWork(soloWork) {
-    console.log(soloWork);
+  let highlight = [];
+  let apps = [];
+
+  for (let i = 0; i < soloWork.length; i++) {
+    if (soloWork[i].highlight === true) {
+      highlight.push(soloWork[i]);
+    } else {
+      apps.push(soloWork[i]);
+    }
+  }
+
+  let highlightEl = displayHighlight(highlight);
+  return highlightEl
+//   console.log(highlight)
+//   let appElements = displayApps(apps);
+//   console.log(apps);
 };
 
 function displayCollaborations(collaborations) {
-    console.log(collaborations);
+    // console.log(collaborations);
 };
 
-function currentYear() {
-    let date = new Date().getFullYear();
-    const dateEl = document.querySelector("#date");
-    dateEl.textContent = date; 
+function displayHighlight(highlight) {
+  // console.log(highlight[0])
+  return `
+    <div class="project highlight" id="${highlight[0].id}">
+        <div class="project-text">
+            <h3>${highlight[0].name}</h3>
+            ${links(highlight[0])}
+            <p>${highlight[0].languages}</p>
+            <p>${highlight[0].dialects}</p>
+        </div>
+    </div>`;
 };
+
+function displayApps(apps) {
+    console.log(apps)
+};
+
+function links(app) {
+    let repo = app.repo;
+    let liveUrl = repo.liveUrl;
+
+    console.log(app.repo)
+    if (app.liveUrl === "") {
+        console.log(`${app.name} has no live url`)
+        // return `<p><a href="${app}`
+    } else {
+        return `
+        <p>
+            <a href="${repo}" target="_blank">repo</a> : <a href="${liveUrl} target="_blank">live url</a>
+        </p>`;
+    }
+    let result;    
+}
+
+function currentYear() {
+  let date = new Date().getFullYear();
+  const dateEl = document.querySelector("#date");
+  dateEl.textContent = date;
+}
 
 // calls
 currentYear();
