@@ -24,7 +24,7 @@ function displayPortfolio(apps) {
   let soloTemplate = displaySoloWork(soloWork);
   // displayCollaborations(collaborations);
 
-  console.log(soloTemplate)
+  console.log(soloTemplate);
 }
 
 function displaySoloWork(soloWork) {
@@ -40,48 +40,66 @@ function displaySoloWork(soloWork) {
   }
 
   let highlightEl = displayHighlight(highlight);
-  return highlightEl
-//   console.log(highlight)
-//   let appElements = displayApps(apps);
-//   console.log(apps);
-};
+  let appElements = displayApps(apps);
+  let result = highlightEl + appElements;
+
+  return result;
+}
 
 function displayCollaborations(collaborations) {
-    // console.log(collaborations);
-};
+  // console.log(collaborations);
+}
 
 function displayHighlight(highlight) {
-  // console.log(highlight[0])
+  //   console.log(highlight)
   return `
-    <div class="project highlight" id="${highlight[0].id}">
-        <div class="project-text">
-            <h3>${highlight[0].name}</h3>
-            ${links(highlight[0])}
-            <p>${highlight[0].languages}</p>
-            <p>${highlight[0].dialects}</p>
-        </div>
-    </div>`;
-};
+  <div class="project highlight" id="${highlight[0].id}">
+    <div class="project-text">
+      <h3>${highlight[0].name}</h3>
+      ${links(highlight[0])}
+      <p>${highlight[0].languages}</p>
+      <p>${highlight[0].dialects}</p>
+    </div>
+  </div>`;
+}
 
 function displayApps(apps) {
-    console.log(apps)
-};
+  let templateArr = [];
+
+  for (let i = 0; i < apps.length; i++) {
+    // console.log(apps[i])
+    let result = `
+    <div class="project" id="${apps[i].id}>
+      <div class="project-text">
+        <h3>${apps[i].name}</h3>
+        ${links(apps[i])}
+        <p>${apps[i].languages}</p>
+        <p>${apps[i].dialects}</p>
+      </div>
+    </div>`;
+    templateArr.push(result);
+  }
+  return templateArr.toString().replace(/>,/g, ">");
+}
 
 function links(app) {
-    let repo = app.repo;
-    let liveUrl = repo.liveUrl;
+  let result;
 
-    console.log(app.repo)
-    if (app.liveUrl === "") {
-        console.log(`${app.name} has no live url`)
-        // return `<p><a href="${app}`
-    } else {
-        return `
-        <p>
-            <a href="${repo}" target="_blank">repo</a> : <a href="${liveUrl} target="_blank">live url</a>
-        </p>`;
-    }
-    let result;    
+  if (app.liveUrl === null) {
+    result = `<p><a href="${app.repo}" target="_blank">repo</a></p>`;
+    return result;
+  } else {
+    result = `<p><a href="${app.repo}" target="_blank">repo</a> : <a href="${app.liveUrl} target="_blank">live url</a></p>`;
+    return result;
+  }
+
+  // if (app.liveUrl === "") {
+  //     console.log(`${app.name} has no live url`);
+
+  //     // return `<p><a href="${app}`
+  // } else {
+
+  // }
 }
 
 function currentYear() {
