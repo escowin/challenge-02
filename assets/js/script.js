@@ -20,22 +20,25 @@ function displayPortfolio(apps) {
       collaborations.push(shuffledArr[i]);
     }
   }
+  // console.log(collaborations)
 
-  let soloTemplate = displaySoloWork(soloWork);
-  // displayCollaborations(collaborations);
+  let soloTemplate = displayWork(soloWork);
+  let collaborationsTemplate = displayWork(collaborations);
 
   console.log(soloTemplate);
-}
+  console.log(collaborationsTemplate);
+};
 
-function displaySoloWork(soloWork) {
+function displayWork(work) {
+  // console.log(work)
   let highlight = [];
   let apps = [];
 
-  for (let i = 0; i < soloWork.length; i++) {
-    if (soloWork[i].highlight === true) {
-      highlight.push(soloWork[i]);
+  for (let i = 0; i < work.length; i++) {
+    if (work[i].highlight === true) {
+      highlight.push(work[i]);
     } else {
-      apps.push(soloWork[i]);
+      apps.push(work[i]);
     }
   }
 
@@ -44,14 +47,10 @@ function displaySoloWork(soloWork) {
   let result = highlightEl + appElements;
 
   return result;
-}
-
-function displayCollaborations(collaborations) {
-  // console.log(collaborations);
-}
+};
 
 function displayHighlight(highlight) {
-  //   console.log(highlight)
+    console.log(highlight)
   return `
   <div class="project highlight" id="${highlight[0].id}">
     <div class="project-text">
@@ -61,7 +60,7 @@ function displayHighlight(highlight) {
       <p>${highlight[0].dialects}</p>
     </div>
   </div>`;
-}
+};
 
 function displayApps(apps) {
   let templateArr = [];
@@ -92,14 +91,6 @@ function links(app) {
     result = `<p><a href="${app.repo}" target="_blank">repo</a> : <a href="${app.liveUrl} target="_blank">live url</a></p>`;
     return result;
   }
-
-  // if (app.liveUrl === "") {
-  //     console.log(`${app.name} has no live url`);
-
-  //     // return `<p><a href="${app}`
-  // } else {
-
-  // }
 }
 
 function currentYear() {

@@ -116,7 +116,7 @@ const portfolio = [
         liveUrl: "https://young-earth-27956.herokuapp.com/",
         languages: "",
         dialects: "",
-        highlight: false,
+        highlight: true,
         collaboration: true
     },
     {
