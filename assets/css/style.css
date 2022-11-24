@@ -36,7 +36,7 @@ body::-webkit-scrollbar {
   background-image: url('../images/small/coding-quiz.jpg');
 }
 
-#css-portfolio {
+#professional-portfolio {
   background-image: url('../images/small/css-portfolio.jpg');
 }
 
@@ -398,7 +398,7 @@ a:hover {
     background-image: url('../images/large/coding-quiz.jpg');
   }
   
-  #css-portfolio {
+  #professional-portfolio {
     background-image: url('../images/large/css-portfolio.jpg');
   }
 

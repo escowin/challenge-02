@@ -1,9 +1,11 @@
-// console.log(portfolio)
+// data
+const soloWorkEl = document.getElementById('solo-work-container');
+const collaborationsEl = document.getElementById('collaborations-container')
 
 // logic
 function randomize(arr) {
   return arr.sort(() => Math.random() - 0.5);
-}
+};
 
 function displayPortfolio(apps) {
   // shuffle
@@ -20,13 +22,14 @@ function displayPortfolio(apps) {
       collaborations.push(shuffledArr[i]);
     }
   }
-  // console.log(collaborations)
 
   let soloTemplate = displayWork(soloWork);
   let collaborationsTemplate = displayWork(collaborations);
 
-  console.log(soloTemplate);
-  console.log(collaborationsTemplate);
+  soloWorkEl.innerHTML = soloTemplate;
+  collaborationsEl.innerHTML = collaborationsTemplate
+  // console.log(soloTemplate);
+  // console.log(collaborationsTemplate);
 };
 
 function displayWork(work) {
@@ -50,7 +53,6 @@ function displayWork(work) {
 };
 
 function displayHighlight(highlight) {
-    console.log(highlight)
   return `
   <div class="project highlight" id="${highlight[0].id}">
     <div class="project-text">
@@ -68,7 +70,7 @@ function displayApps(apps) {
   for (let i = 0; i < apps.length; i++) {
     // console.log(apps[i])
     let result = `
-    <div class="project" id="${apps[i].id}>
+    <div class="project" id="${apps[i].id}">
       <div class="project-text">
         <h3>${apps[i].name}</h3>
         ${links(apps[i])}
