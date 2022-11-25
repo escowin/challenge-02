@@ -22,7 +22,7 @@ function displayPortfolio(apps) {
     }
   }
 
-  let soloTemplate = generate(soloWork);
+  let soloTemplate = displayWork(soloWork);
   let collaborationsTemplate = displayWork(collaborations);
 
   soloWorkEl.innerHTML = soloTemplate;
