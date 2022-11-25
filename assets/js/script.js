@@ -1,16 +1,15 @@
 // data
-const soloWorkEl = document.getElementById('solo-work-container');
-const collaborationsEl = document.getElementById('collaborations-container')
+const soloWorkEl = document.getElementById("solo-work-container");
+const collaborationsEl = document.getElementById("collaborations-container");
 
 // logic
 function randomize(arr) {
   return arr.sort(() => Math.random() - 0.5);
-};
+}
 
 function displayPortfolio(apps) {
-  // shuffle
+  // shuffles original array each time the page refreshes
   let shuffledArr = randomize(apps);
-  // console.log(shuffledArr)
   let soloWork = [];
   let collaborations = [];
 
@@ -23,17 +22,14 @@ function displayPortfolio(apps) {
     }
   }
 
-  let soloTemplate = displayWork(soloWork);
+  let soloTemplate = generate(soloWork);
   let collaborationsTemplate = displayWork(collaborations);
 
   soloWorkEl.innerHTML = soloTemplate;
-  collaborationsEl.innerHTML = collaborationsTemplate
-  // console.log(soloTemplate);
-  // console.log(collaborationsTemplate);
-};
+  collaborationsEl.innerHTML = collaborationsTemplate;
+}
 
 function displayWork(work) {
-  // console.log(work)
   let highlight = [];
   let apps = [];
 
@@ -50,7 +46,7 @@ function displayWork(work) {
   let result = highlightEl + appElements;
 
   return result;
-};
+}
 
 function displayHighlight(highlight) {
   return `
@@ -62,13 +58,12 @@ function displayHighlight(highlight) {
       <p>${highlight[0].dialects}</p>
     </div>
   </div>`;
-};
+}
 
 function displayApps(apps) {
   let templateArr = [];
 
   for (let i = 0; i < apps.length; i++) {
-    // console.log(apps[i])
     let result = `
     <div class="project" id="${apps[i].id}">
       <div class="project-text">
@@ -90,7 +85,7 @@ function links(app) {
     result = `<p><a href="${app.repo}" target="_blank">repo</a></p>`;
     return result;
   } else {
-    result = `<p><a href="${app.repo}" target="_blank">repo</a> : <a href="${app.liveUrl} target="_blank">live url</a></p>`;
+    result = `<p><a href="${app.repo}" target="_blank">repo</a> : <a href="${app.liveUrl}" target="_blank">live url</a></p>`;
     return result;
   }
 }
