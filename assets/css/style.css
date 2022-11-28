@@ -112,7 +112,8 @@ footer,
 .subheader,
 .contact-info {
   color: var(--offwhite);
-  background-color: var(--offblack);
+  background: linear-gradient(var(--offblack), var(--offblack)),
+  fixed url('../images/small/readme-generator.jpg');
 }
 
 footer {
@@ -348,6 +349,15 @@ a:hover {
     background-image: url('../images/medium/weather-dashboard.jpg');
   }
 
+  header,
+footer,
+.subheader,
+.contact-info {
+  color: var(--offwhite);
+  background: linear-gradient(var(--offblack), var(--offblack)),
+  fixed url('../images/small/solar-weather.jpg');
+}
+
   #name {
     font-size: 1.5rem;
   }
@@ -384,7 +394,14 @@ a:hover {
 
 /* display.small-desktop */
 @media screen and (min-width: 1024px) {
-
+  header,
+  footer,
+  .subheader,
+  .contact-info {
+    color: var(--offwhite);
+    background: linear-gradient(var(--offblack), var(--offblack)),
+    fixed url('../images/large/solar-weather.jpg');
+  }
   .desktop {
     display: contents;
   }
