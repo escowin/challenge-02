@@ -27,19 +27,11 @@ body {
     text-align: end;
 }
 
-* {
-    /* border: 1px dotted blue; */
-}
 /* resume footer */
 #resume-footer {
     text-align: center;
     padding: 0;
-    /* border: 2.5px solid; */
-    /* border-bottom: none; */
-    /* border-right: 2px solid var(--offblack); */
     border-top: 2px solid var(--offblack);
-    /* border-image-slice: 1;
-    border-image-source: linear-gradient(to right, rgba(255, 255, 255, 0), var(--offblack)); */
 }
 
 /* resume main */
@@ -121,11 +113,15 @@ body {
     padding-left: 2rem;
 }
 
-
 .exp {
     font-size: .65rem;
     text-align: end;
     color: rgba(40, 40, 44, .75);
+}
+
+/* exp typography */
+#experience .details {
+    text-transform: lowercase;
 }
 
 /* display.print */
@@ -213,11 +209,11 @@ body {
         padding-left: 2vw;
     }
     
-    #expierence .left-text, #education .left-text, #endeavors .left-text {
+    #experience .left-text, #education .left-text, #endeavors .left-text {
         order: 2;
     }
 
-    #education .details, #expierence .right-text .details {
+    #education .details, #experience .right-text .details {
         display: none;
     }
 
