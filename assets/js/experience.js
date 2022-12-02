@@ -1,6 +1,7 @@
 // data
 const expertiseEl = document.getElementById("skills");
 const experienceEl = document.getElementById("experience");
+const endeavorsEl = document.getElementById("endeavors");
 
 // data | objects & arrays correspond used to populate resume sections
 const expertise = {
@@ -110,12 +111,69 @@ const experience = [
   // },
 ];
 
+const endeavors = [
+  {
+    year: 2023,
+    role: "Texas rowing club athelete",
+    details: "Mens novice single, mens masters-b straight pair",
+    event: "The heart of texas regatta",
+    location: "Austin, TX",
+  },
+  {
+    year: 2022,
+    role: "ACE Tutor",
+    details: "U.S. history tutor, art club head, weightlifting coach",
+    event: "Austin can academy",
+    location: "Austin, TX",
+  },
+  {
+    year: 2021,
+    role: "Creative action teaching artis",
+    details: "Extracurricular art instructor",
+    event: "Hart elementary",
+    location: "Austin, TX",
+  },
+  {
+    year: 2017,
+    role: "Mountaineer",
+    details:
+      "Mount wilson, cucamonga peak, mt baldy, san bernardino peak, san jacinto, san gorgonio",
+    event: "Socal six-pack of peaks",
+    location: "Southern California",
+  },
+  {
+    year: 2012,
+    role: "Finer things club founder",
+    details: "President, cultural executor",
+    event: "California state university, fullerton",
+    location: "Fullerton, CA",
+  },
+  {
+    year: 2010,
+    role: "World passport instructor",
+    details: "English as a foreign language instructor",
+    event: "The ministry of education of taiwan",
+    location: "聖功女子高級中學",
+  },
+  {
+    year: 2009,
+    role: "Teach and learn in korea scholar",
+    details: "English as a second language instructor",
+    event:
+      "The ministry of education, science & technology,<span class='mobile-hide'></span><br class='small-laptop mobile-show print-hide' />republic of korea",
+    location: "남상초등학교",
+  },
+];
+
 // logic | display language data in expertise section
 function generateExpertise(skillset) {
   // stringifies and styles the array />,/g, ">"
   const languages = skillset.languages.toString().replace(/,/g, " ");
   const cssFrameworks = skillset.frameworks.css.toString().replace(/,/g, " ");
-  const jsFrameworks = skillset.frameworks.js.sort().toString().replace(/,/g, " ");
+  const jsFrameworks = skillset.frameworks.js
+    .sort()
+    .toString()
+    .replace(/,/g, " ");
   const databases = skillset.frameworks.db.sort().toString().replace(/,/g, " ");
   const paradigms = skillset.paradigms.toString().replace(/,/g, " ");
   const tools = skillset.tools.toString().replace(/,/g, " ");
@@ -125,14 +183,14 @@ function generateExpertise(skillset) {
     <p>Frameworks</p><p class="skillset">${cssFrameworks} ${jsFrameworks} ${databases}</p>
     <p>Paradigms</p><p class="skillset">${paradigms}</p>
     <p>Tools</p><p class="skillset">${tools}</p>`;
-};
+}
 
 function displayExpertise() {
   let template = generateExpertise(expertise);
   expertiseEl.innerHTML = template;
 
   return expertiseEl;
-};
+}
 
 // logic | displaying exp data in exp section
 function generateExperience(exp) {
@@ -183,5 +241,38 @@ function displayExperience() {
   return experienceEl;
 }
 
+// logic | display extracurricular data in endeavors
+function generateEndeavors(endeavor) {
+  let htmlArr = [];
+  for (let i = 0; i < endeavor.length; i++) {
+    let rowTemplate = `<article class="row">
+            <p class="year">${endeavor[i].year}</p>
+            <div class="text-wrapper">
+                <div class="left-text">
+                  <p>${endeavor[i].role}</p>
+                  <p class="details">${endeavor[i].details}</p>
+                </div>
+                <div class="right-text">
+                    <p>${endeavor[i].event}</p>
+                    <p class="details">${endeavor[i].location}</p>
+                </div>
+            </div>
+        </article>`;
+
+    htmlArr.push(rowTemplate);
+  }
+
+  let result = htmlArr.toString().replace(/>,/g, ">");
+  return result;
+};
+
+function displayEndeavors() {
+  let template = generateEndeavors(endeavors);
+  endeavorsEl.innerHTML = template;
+  return endeavorsEl;
+};
+
+// calls
 displayExpertise();
 displayExperience();
+displayEndeavors();
