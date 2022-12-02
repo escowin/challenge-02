@@ -84,7 +84,7 @@ function generateExperience(exp) {
             </div>
             <div class="text-wrapper">
             <div class="left-text">
-              <p class="position">${exp[i].role}r</p>
+              <p class="position">${exp[i].role}</p>
               <p class="details">${exp[i].code}</p>
               <ul class="role details">
                 ${generateDescription(exp[i].description)}
