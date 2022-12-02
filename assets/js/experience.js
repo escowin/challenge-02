@@ -1,6 +1,7 @@
 // data
 const expertiseEl = document.getElementById("skills");
 const experienceEl = document.getElementById("experience");
+const educationEl = document.getElementById("education");
 const endeavorsEl = document.getElementById("endeavors");
 
 // data | objects & arrays correspond used to populate resume sections
@@ -111,6 +112,30 @@ const experience = [
   // },
 ];
 
+const education = [
+    {
+        year: 2022,
+        degree: "Coding bootcamp, Certificate of completion",
+        major: "full-stack web development",
+        school: "University of texas at austin",
+        location: "Austin, TX"
+    },
+    {
+        year: 2015,
+        degree: "Undergraduate, Bachelor of fine arts",
+        major: "illustration, screenwriting",
+        school: "California state university, fullerton",
+        location: "Fullerton, CA"
+    },
+    {
+        year: 2011,
+        degree: "Undergraduate, Associate of arts",
+        major: "fine arts",
+        school: "Orange coast college",
+        location: "Costa Mesa, CA"
+    },
+];
+
 const endeavors = [
   {
     year: 2023,
@@ -128,7 +153,7 @@ const endeavors = [
   },
   {
     year: 2021,
-    role: "Creative action teaching artis",
+    role: "Creative action teaching artist",
     details: "Extracurricular art instructor",
     event: "Hart elementary",
     location: "Austin, TX",
@@ -192,11 +217,11 @@ function displayExpertise() {
   return expertiseEl;
 }
 
-// logic | displaying exp data in exp section
+// logic | displays exp data in #exp
 function generateExperience(exp) {
   let htmlArr = [];
   for (let i = 0; i < exp.length; i++) {
-    let articleTemplate = `
+    let html = `
         <article class="row">
             <div>
                 <p class="year">${exp[i].year}</p>
@@ -218,7 +243,7 @@ function generateExperience(exp) {
             </div>
           </div>
         </article>`;
-    htmlArr.push(articleTemplate);
+    htmlArr.push(html);
   }
   let result = htmlArr.toString().replace(/>,/g, ">");
   return result;
@@ -227,8 +252,8 @@ function generateExperience(exp) {
 function generateDescription(description) {
   let htmlArr = [];
   for (let i = 0; i < description.length; i++) {
-    let descriptionTemplate = `<li>${description[i]}</li>`;
-    htmlArr.push(descriptionTemplate);
+    let html = `<li>${description[i]}</li>`;
+    htmlArr.push(html);
   }
   let result = htmlArr.toString().replace(/>,/g, ">");
 
@@ -241,11 +266,42 @@ function displayExperience() {
   return experienceEl;
 }
 
-// logic | display extracurricular data in endeavors
+// logic | displays education data in #education
+function generateEducation(education) {
+    let htmlArr = [];
+    for (let i = 0; i < education.length; i++) {
+        let html = `<article class="row">
+        <p class="year">${education[i].year}</p>
+        <div class="text-wrapper">
+          <div class="left-text">
+            <p>${education[i].degree}</p>
+            <p class="details">${education[i].major}</p>
+          </div>
+          <div class="right-text">
+            <p>${education[i].school}</p>
+            <p class="details">${education[i].location}</p>
+          </div>
+        </div>
+      </article>`;
+
+      htmlArr.push(html);
+    }
+    let result = htmlArr.toString().replace(/>,/g, ">");
+
+    return result;
+};
+
+function displayEducation() {
+    let template = generateEducation(education);
+    educationEl.innerHTML = template;
+    return educationEl;
+};
+
+// logic | displays extracurricular data in #endeavors
 function generateEndeavors(endeavor) {
   let htmlArr = [];
   for (let i = 0; i < endeavor.length; i++) {
-    let rowTemplate = `<article class="row">
+    let html = `<article class="row">
             <p class="year">${endeavor[i].year}</p>
             <div class="text-wrapper">
                 <div class="left-text">
@@ -259,7 +315,7 @@ function generateEndeavors(endeavor) {
             </div>
         </article>`;
 
-    htmlArr.push(rowTemplate);
+    htmlArr.push(html);
   }
 
   let result = htmlArr.toString().replace(/>,/g, ">");
@@ -272,7 +328,18 @@ function displayEndeavors() {
   return endeavorsEl;
 };
 
-// calls
-displayExpertise();
-displayExperience();
-displayEndeavors();
+// logic | displays call returns
+function displayResume() {
+    console.log(`
+    \u00A9 ${new Date().getFullYear()} Edwin M. Escobar
+    https://github.com/escowin/professional-portfolio
+    `);
+
+    displayExpertise();
+    displayExperience();
+    displayEducation();
+    displayEndeavors();
+}
+
+// call
+displayResume();
