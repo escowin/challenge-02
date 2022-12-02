@@ -10,8 +10,8 @@ const experience = [
     location: "Dallas, TX",
     code: "bcrypt css express javascript mysql sequelize node react",
     description: [
-      "Building a user-friendly frontend and its client database backend.",
-      "Setting up and routing to a SQL database to store frontend user input.",
+      "Building an MVC app for company's clients and employees.",
+      "Setting up the server, and routing its Rest API to faciliate frontend & backend communication.",
       "Writing great copy for a financial planner.",
     ],
     url: "https://github.com/escowin/vvh-financial",
@@ -25,7 +25,7 @@ const experience = [
     code: "Rice University Coding Boot Camp Teacher's Assistant",
     description: [
       "Carrying out administrative tasks on behalf of the instructor.",
-      "Helping students struggling with course work during office hours.",
+      "Helping students struggling with coursework during office hours.",
       "Recording and uploading Zoom classes to Canvas.",
     ],
     url: "#",
@@ -36,7 +36,7 @@ const experience = [
     year: "2018",
     duration: "present",
     location: "Austin, TX",
-    code: "html css javascript jquery adobe cc corel painter",
+    code: "html css javascript jquery adobe&thinsp;cc corel&thinsp;painter",
     description: [
       "Sole proprietorship to sell my art here in Austin. Built site to serve as my portfolio and business card.",
     //   "Initially built with wordpress, the site has since been rebuilt using html, css, javascript and jquery.",
