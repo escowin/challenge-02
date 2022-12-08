@@ -476,7 +476,7 @@ footer,
   }
 
   #project {
-    font-size: 1rem;
+    font-size: .75rem;
     padding-left: 1.25vw;
     margin-left: .75vw;
   }
@@ -494,7 +494,7 @@ footer,
   }
 
   #about-pic-container p {
-    font-size: 1.125rem;
+    font-size: 1rem;
     margin-top: -10%;
     padding-left: .25vw;
     padding-right: 2vw;
@@ -528,11 +528,19 @@ footer,
   }
 
   .project {
-    min-height: 25vh;
+    min-height: 22.5vh;
   }
 
   .project-text {
-    width: 80%;
+    width: 90%;
+  }
+
+  .project-text h3 {
+    font-size: 1rem;
+  }
+
+  .project-text p {
+    font-size: .7rem;
   }
 
   #contact-links {
