@@ -115,7 +115,7 @@ const portfolio = [
         repo: "https://github.com/escowin/note-taker",
         liveUrl: null,
         languages: "js es6",
-        dialects: "express node jest",
+        dialects: "express node js css html",
         highlight: false,
         collaboration: false,
     },
