@@ -48,6 +48,10 @@ body::-webkit-scrollbar {
   background-image: url('../images/small/escowinart.jpg');
 }
 
+#note-taker {
+  background-image: url('../images/small/note-taker.jpg');
+}
+
 #password-generator {
   background-image: url('../images/small/password-generator.jpg');
 }
@@ -337,6 +341,10 @@ a:hover {
     background-image: url('../images/medium/coding-quiz.jpg');
   }
 
+  #note-taker {
+    background-image: url('../images/medium/note-taker.jpg');
+  }
+
   #portfolio-generator {
     background-image: url('../images/medium/portfolio-generator.jpg');
   }
@@ -425,6 +433,10 @@ footer,
   
   #escowinart {
     background-image: url('../images/large/escowinart.jpg');
+  }
+
+  #note-taker {
+    background-image: url('../images/large/note-taker.jpg');
   }
 
   #password-generator {

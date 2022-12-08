@@ -110,6 +110,16 @@ const portfolio = [
         collaboration: false
     },
     {
+        name: "Note taker",
+        id: "note-taker",
+        repo: "https://github.com/escowin/note-taker",
+        liveUrl: null,
+        languages: "js es6",
+        dialects: "express node jest",
+        highlight: false,
+        collaboration: false,
+    },
+    {
         name: "Smart home",
         id: "smart-home",
         repo: "https://github.com/escowin/smart-home",
