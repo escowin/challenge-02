@@ -2,7 +2,10 @@
 const soloWorkEl = document.getElementById("solo-work-container");
 const collaborationsEl = document.getElementById("collaborations-container");
 
-// logic
+// logic | about section
+// function displayAbout(details) {};
+
+// logic | solo work & collaborations
 function randomize(arr) {
   return arr.sort(() => Math.random() - 0.5);
 }
@@ -98,4 +101,5 @@ function currentYear() {
 
 // calls
 currentYear();
+// displayAbout()
 displayPortfolio(portfolio);
