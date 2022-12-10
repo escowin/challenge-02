@@ -1,9 +1,34 @@
 // data
+const aboutTextEl = document.getElementById("about-text-container");
 const soloWorkEl = document.getElementById("solo-work-container");
 const collaborationsEl = document.getElementById("collaborations-container");
 
 // logic | about section
-// function displayAbout(details) {};
+function displayAbout(details) {
+  let languages = details.languages.toString().replace(/,/g, " ");
+
+  let css = details.frameworks.css.toString().replace(/,/g, " ");
+  let js = details.frameworks.js.toString().replace(/,/g, " ");
+  let db = details.frameworks.db.toString().replace(/,/g, " ");
+  let paradigms = details.paradigms.toString().replace(/,/g, " ");
+  let tools = details.tools.toString().replace(/,/g, " ");
+
+  aboutTextEl.innerHTML = `<h3>Software Engineer</h3>
+  <div>
+    <h4>Languages</h4> <p>${languages}</p>
+  </div>
+  <div>
+    <h4>Libraries & frameworks<h4> <p>${css} ${js} ${db}<p>
+  </div>
+  <div>
+    <h4>Paradigms<h4> <p>${paradigms}<p>
+  </div>
+  <div>
+    <h4>Tools<h4> <p>${tools}<p>
+  </div>`;
+
+  return aboutTextEl.innerHTML;
+}
 
 // logic | solo work & collaborations
 function randomize(arr) {
@@ -97,9 +122,13 @@ function currentYear() {
   let date = new Date().getFullYear();
   const dateEl = document.querySelector("#date");
   dateEl.textContent = date;
+
+  console.log(`
+  \u00a9 ${date} Edwin M. Escobar
+  https://github.com/escowin/professional-portfolio`)
 }
 
 // calls
 currentYear();
-// displayAbout()
+displayAbout(expertise);
 displayPortfolio(portfolio);
