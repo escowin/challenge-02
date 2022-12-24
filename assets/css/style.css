@@ -410,6 +410,7 @@ footer,
     background: linear-gradient(var(--offblack), var(--offblack)),
     fixed url('../images/large/solar-weather.jpg');
   }
+
   .desktop {
     display: contents;
   }
@@ -508,10 +509,6 @@ footer,
     align-items: center;
   }
 
-  #about-text-container {
-    grid-column: span 4;
-  }
-
   #about-pic-container {
     width: 12.5rem;
     height: 12.5rem;
@@ -520,6 +517,24 @@ footer,
 
   #about-text-container {
     margin-top: -2.5%;
+    grid-column: span 4;
+  }
+
+  #about-text-container div {
+    display: grid;
+    grid-template-columns: 9rem auto;
+  }
+
+  #about-text-container h3 {
+    font-size: 1.45rem;
+  }
+
+  #about-text-container h4 {
+    font-size: 1.25rem;
+  }
+
+  #about-text-container p {
+    font-size: 1rem;
   }
 
   .projects {
@@ -545,29 +560,5 @@ footer,
 
   #contact-links {
     justify-content: space-between;
-  }
-}
-
-/* display.large-desktop */
-@media screen and (min-width: 1440px) {
-  #name {
-    font-size: 1.75rem;
-  }
-
-  #navigation ul,
-  .subheader,
-  #about-pic-container p,
-  #about-text-container h3,
-  .project-text h3 {
-    font-size: 1.5rem;
-  }
-
-  #about-text-container h4 {
-    font-size: 1.25rem;
-  }
-
-  #about-text-container p,
-  .project-text p {
-    font-size: 1.125rem;
   }
 }

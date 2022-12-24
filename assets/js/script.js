@@ -13,18 +13,21 @@ function displayAbout(details) {
   let paradigms = details.paradigms.toString().replace(/,/g, " ");
   let tools = details.tools.toString().replace(/,/g, " ");
 
-  aboutTextEl.innerHTML = `<h3>Software Engineer</h3>
+  aboutTextEl.innerHTML = `<h3>Software engineer</h3>
   <div>
     <h4>Languages</h4> <p>${languages}</p>
   </div>
   <div>
-    <h4>Libraries & frameworks<h4> <p>${css} ${js} ${db}<p>
+    <h4>Frameworks</h4> <p>${css} ${js}</p>
   </div>
   <div>
-    <h4>Paradigms<h4> <p>${paradigms}<p>
+    <h4>Databases</h4> <p>${db}</p>
   </div>
   <div>
-    <h4>Tools<h4> <p>${tools}<p>
+    <h4>Paradigms</h4> <p>${paradigms}</p>
+  </div>
+  <div>
+    <h4>Tools</h4> <p>${tools}</p>
   </div>`;
 
   return aboutTextEl.innerHTML;
