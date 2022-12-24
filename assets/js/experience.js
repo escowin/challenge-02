@@ -1,12 +1,12 @@
 // data | knowledge & exp
 const expertise = {
-  languages: ["html", "css", "javascript", "es6", "json", "sql", "ruby"],
+  languages: ["html", "css", "javascript", "es6", "json", "ruby", "sql" ],
   frameworks: {
     css: ["bootstrap"],
     js: [
       "bcrypt",
-      "day",
-      "moment",
+      // "day",
+      // "moment",
       "handlebars",
       "inquirer",
       "jest",
@@ -16,9 +16,10 @@ const expertise = {
       "sequelize",
       "node",
     ],
-    db: ["mysql", "graphql", "nosql"],
+    db: ["mysql", "graphql", "mongodb", "postgresql", "sqlite"],
+    ruby: ["rails"]
   },
-  paradigms: ["mvc", "oop", "orm", "rwd", "spa", "tdd"],
+  paradigms: ["mvc", "oop", "orm", "rwd", "spa", "tdd", "nosql"],
   tools: [
     "api",
     "git",
@@ -26,7 +27,6 @@ const expertise = {
     "heroku",
     "insomnia",
     "jawsdb",
-    "mongodb",
     "adobe&thinsp;cc",
     "corel&thinsp;painter",
     "wordpress",

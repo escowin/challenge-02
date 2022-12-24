@@ -13,13 +13,22 @@ function generateExpertise(skillset) {
       .sort()
       .toString()
       .replace(/,/g, " ");
+    const rubyFrameworks = skillset.frameworks.ruby
+      .sort()
+      .toString()
+      .replace(/,/g, " ");
     const databases = skillset.frameworks.db.sort().toString().replace(/,/g, " ");
     const paradigms = skillset.paradigms.toString().replace(/,/g, " ");
     const tools = skillset.tools.toString().replace(/,/g, " ");
   
     return `
       <p>Languages</p><p class="skillset">${languages}</p>
-      <p>Frameworks</p><p class="skillset">${cssFrameworks} ${jsFrameworks} ${databases}</p>
+      <p>Frameworks</p><p class="skillset">
+        ${cssFrameworks}
+        ${jsFrameworks}
+        ${rubyFrameworks}
+      </p>
+      <p>Databases</p><p class="skillset">${databases}</p>
       <p>Paradigms</p><p class="skillset">${paradigms}</p>
       <p>Tools</p><p class="skillset">${tools}</p>`;
   }

@@ -149,4 +149,14 @@ const portfolio = [
         highlight: false,
         collaboration: true
     },
+    {
+        name: "Address book",
+        id: "address-book",
+        repo: "https://github.com/escowin/address-book-escobar-edwin",
+        liveUrl: null,
+        languages: "ruby sql",
+        dialects: "rails postgres bootstrap",
+        highlight: false,
+        collaboration: false
+    },
 ];
