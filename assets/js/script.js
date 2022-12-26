@@ -9,8 +9,9 @@ function displayAbout(details) {
 
   let css = details.frameworks.css.toString().replace(/,/g, " ");
   let js = details.frameworks.js.toString().replace(/,/g, " ");
-  let db = details.frameworks.db.toString().replace(/,/g, " ");
-  let paradigms = details.paradigms.toString().replace(/,/g, " ");
+  let ruby = details.frameworks.ruby.toString().replace(/,/g, " ");
+  let db = details.frameworks.db.sort().toString().replace(/,/g, " ");
+  let paradigms = details.paradigms.sort().toString().replace(/,/g, " ");
   let tools = details.tools.toString().replace(/,/g, " ");
 
   aboutTextEl.innerHTML = `<h3>Software engineer</h3>
@@ -18,7 +19,7 @@ function displayAbout(details) {
     <h4>Languages</h4> <p>${languages}</p>
   </div>
   <div>
-    <h4>Frameworks</h4> <p>${css} ${js}</p>
+    <h4>Frameworks</h4> <p>${css} ${js} ${ruby}</p>
   </div>
   <div>
     <h4>Databases</h4> <p>${db}</p>

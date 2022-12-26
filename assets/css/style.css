@@ -121,7 +121,7 @@ footer,
 .contact-info {
   color: var(--offwhite);
   background: linear-gradient(var(--offblack), var(--offblack)),
-  fixed url('../images/small/readme-generator.jpg');
+    fixed url('../images/small/readme-generator.jpg');
 }
 
 footer {
@@ -344,7 +344,7 @@ a:hover {
   #address-book {
     background-image: url('../images/medium/address-book.jpg');
   }
-  
+
   #coding-quiz {
     background-image: url('../images/medium/coding-quiz.jpg');
   }
@@ -366,13 +366,13 @@ a:hover {
   }
 
   header,
-footer,
-.subheader,
-.contact-info {
-  color: var(--offwhite);
-  background: linear-gradient(var(--offblack), var(--offblack)),
-  fixed url('../images/small/solar-weather.jpg');
-}
+  footer,
+  .subheader,
+  .contact-info {
+    color: var(--offwhite);
+    background: linear-gradient(var(--offblack), var(--offblack)),
+      fixed url('../images/small/solar-weather.jpg');
+  }
 
   #name {
     font-size: 1.5rem;
@@ -410,13 +410,14 @@ footer,
 
 /* display.small-desktop */
 @media screen and (min-width: 1024px) {
+
   header,
   footer,
   .subheader,
   .contact-info {
     color: var(--offwhite);
     background: linear-gradient(var(--offblack), var(--offblack)),
-    fixed url('../images/large/solar-weather.jpg');
+      fixed url('../images/large/solar-weather.jpg');
   }
 
   .desktop {
@@ -426,42 +427,104 @@ footer,
   .desktop-hide {
     display: none;
   }
-  
+
+  /* header */  
+  header {
+    display: flex;
+    padding: .5vw 1vw;
+    align-items: center;
+  }
+
+  #header {
+    margin-bottom: .25vw;
+  }
+
   /* flow */
   #portfolio-main {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
       "a b"
       "c c"
       "d d";
-    grid-template-columns: 1fr auto;
-    /* flex-direction: row; */
+    grid-template-columns: auto 1fr;
     align-items: baseline;
+  }
+
+  /* about section */
+  #about-container, #contact-container {
+    margin: 1.5vw 0 2vw 0;
   }
 
   #about {
     grid-area: b;
+    height: 100%;
+    padding-left: 0;
   }
 
   #about-container {
-    display: flex;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 0 1rem 0 1.5rem;
   }
 
+  #about .subheader {
+    border-radius: 0;
+  }
+
+  #about-pic-container {
+    --ratio: 10rem;
+    width: var(--ratio);
+    height: var(--ratio);
+  }
+
+  #about-pic-container p {
+    display: none;
+  }
+
+  #about-text-container div {
+    display: grid;
+    grid-template-columns: 9rem auto;
+  }
+
+  #about-text-container h3 {
+    font-size: 1.45rem;
+  }
+
+  #about-text-container h4 {
+    font-size: 1.25rem;
+  }
+
+  #about-text-container p {
+    font-size: 1rem;
+    align-self: flex-end;
+  }
+
+  /* section.contact */
   #contact {
     grid-area: a;
-
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 
   #contact-links {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+    gap: 0;
+    justify-content: space-evenly;
+    margin: 0;
   }
 
   .contact-info {
     display: flex;
-    margin-bottom: 1rem;
-    padding: 1vw 2.5vw;
+    padding: .5vw 2vw;
     align-items: center;
+  }
+
+  #linkedin-btn {
+    border-radius: 1rem;
+    margin-bottom: 0;
   }
 
   .contact-info i {
@@ -476,11 +539,52 @@ footer,
     grid-area: d;
   }
 
+  #project {
+    font-size: .75rem;
+    padding-left: 1.25vw;
+    margin-left: .75vw;
+  }
+
+  #navigation ul {
+    font-size: 1rem;
+  }
+
+  .copyright {
+    font-size: .75rem;
+  }
+
+  .subheader {
+    padding: .25vw 2.5vw;
+  }
+
+
+
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1vw;
+  }
+
+  .project {
+    min-height: 22.5vh;
+  }
+
+  .project-text {
+    width: 90%;
+  }
+
+  .project-text h3 {
+    font-size: 1rem;
+  }
+
+  .project-text p {
+    font-size: .7rem;
+  }
+
   /* screenshots */
   #address-book {
     background-image: url('../images/large/address-book.jpg');
   }
-  
+
   #bluestrawberry {
     background-image: url('../images/large/bluestrawberry.jpg');
   }
@@ -488,7 +592,7 @@ footer,
   #coding-quiz {
     background-image: url('../images/large/coding-quiz.jpg');
   }
-  
+
   #professional-portfolio {
     background-image: url('../images/large/css-portfolio.jpg');
   }
@@ -496,7 +600,7 @@ footer,
   #day-planner {
     background-image: url('../images/large/day-planner.jpg');
   }
-  
+
   #escowinart {
     background-image: url('../images/large/escowinart.jpg');
   }
@@ -527,100 +631,5 @@ footer,
 
   #weather-dashboard {
     background-image: url('../images/large/weather-dashboard.jpg');
-  }
-
-  #about .content {
-    padding: 0;
-  }
-
-  header {
-    display: flex;
-    padding: .5vw 1vw;
-    align-items: centere;
-  }
-
-  #header {
-    margin-bottom: .25vw;
-  }
-
-  #project {
-    font-size: .75rem;
-    padding-left: 1.25vw;
-    margin-left: .75vw;
-  }
-
-  #navigation ul {
-    font-size: 1rem;
-  }
-
-  .copyright {
-    font-size: .75rem;
-  }
-
-  .subheader {
-    padding: .25vw 2.5vw;
-  }
-
-  #about-pic-container p {
-    /* font-size: 1rem; */
-    /* margin-top: -10%; */
-    /* padding-left: .25vw; */
-    /* padding-right: 2vw; */
-    /* width: 90%; */
-    display: none;
-  }
-
-  #about-pic-container {
-    --ratio: 12rem;
-    width: var(--ratio);
-    margin: 0 0 0 2vw;
-
-  }
-
-  #about-text-container {
-    margin-top: -2.5%;
-    grid-column: span 4;
-  }
-
-  #about-text-container div {
-    display: grid;
-    grid-template-columns: 9rem auto;
-  }
-
-  #about-text-container h3 {
-    font-size: 1.45rem;
-  }
-
-  #about-text-container h4 {
-    font-size: 1.25rem;
-  }
-
-  #about-text-container p {
-    font-size: 1rem;
-  }
-
-  .projects {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1vw;
-  }
-
-  .project {
-    min-height: 22.5vh;
-  }
-
-  .project-text {
-    width: 90%;
-  }
-
-  .project-text h3 {
-    font-size: 1rem;
-  }
-
-  .project-text p {
-    font-size: .7rem;
-  }
-
-  #contact-links {
-    justify-content: space-between;
   }
 }
