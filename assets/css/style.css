@@ -22,23 +22,15 @@
   font-variant: small-caps;
 }
 
-/* scrollbar */
-body::-webkit-scrollbar {
-  display: none;
-}
-
+/* hidden */
+body::-webkit-scrollbar,
 .desktop {
   display: none;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-  transition: 1s;
-}
-
-/* display | flow */
+/* flex*/
 body,
+footer,
 #header,
 #navigation ul,
 #portfolio-main,
@@ -48,16 +40,44 @@ body,
   display: flex;
 }
 
+body,
+main,
+footer {
+  flex-direction: column;
+}
+
+header,
+#contact-links,
+#navigation ul {
+  justify-content: space-between;
+}
+
+.project,
+footer,
+#about-pic-container {
+  align-items: center;
+}
+
+/* grid */
 .projects,
 #about-container {
   display: grid;
 }
 
-/* box */
+#about-container {
+  grid-template-columns: repeat(2, auto);
+  gap: 2vw;
+}
+
+.projects {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3vw;
+}
+
+/* box styles */
 body {
   color: var(--offblack);
   background-color: var(--offwhite);
-  flex-direction: column;
 }
 
 /* header & footer */
@@ -72,11 +92,9 @@ footer,
 
 footer {
   padding: 5px 0;
-  text-align: center;
 }
 
 header {
-  justify-content: space-between;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -99,16 +117,10 @@ header {
 }
 
 #navigation ul {
-  justify-content: space-between;
   list-style: none;
 }
 
 /* main */
-#portfolio-main {
-  flex-direction: column;
-  align-items: center;
-}
-
 .section {
   padding-left: .75rem;
   width: 100%;
@@ -130,11 +142,6 @@ header {
   background: linear-gradient(65deg, transparent 50vw, var(--section));
 }
 
-#about-container {
-  grid-template-columns: repeat(2, auto);
-  gap: 2vw;
-}
-
 #about-pic-container {
   background-image: url('../images/profile.jpg');
   background-position: center;
@@ -144,8 +151,6 @@ header {
   border-radius: 50%;
   border: .25rem solid var(--offblack);
   box-shadow: var(--box-shadow) var(--offblack), inset var(--box-shadow) var(--offblack);
-  align-items: center;
-  justify-items: center;
   margin-top: .75rem;
 }
 
@@ -163,16 +168,10 @@ header {
 }
 
 /* main.projects */
-.projects {
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3vw;
-}
-
 .project {
   opacity: 95%;
   border-radius: 1rem;
   min-height: 35vh;
-  align-items: center;
   box-shadow: var(--box-shadow) var(--offblack);
   transition: 1s;
   background-size: cover;
@@ -201,9 +200,6 @@ header {
 }
 
 /* main.contact */
-#contact-links {
-  justify-content: space-between;
-}
 
 .contact-info {
   padding: .75vh 3vw;
@@ -216,6 +212,12 @@ header {
 }
 
 /* typography */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 1s;
+}
+
 #about-pic-container p {
   color: var(--offwhite);
   text-shadow: 0 0 1vw var(--offblack);
