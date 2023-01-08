@@ -153,15 +153,6 @@ function generateExpertise(skillset) {
   
   // logic | displays call returns
   function displayResume() {
-    let date = new Date().getFullYear();
-    const dateEl = document.querySelector("#date");
-    dateEl.textContent = date;
-
-    console.log(`
-    \u00A9 ${date} Edwin M. Escobar
-    https://github.com/escowin/professional-portfolio
-    `);
-
     displayExpertise();
     displayExperience();
     displayEducation();

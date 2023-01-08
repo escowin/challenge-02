@@ -4,7 +4,7 @@ const portfolio = [
         id: "professional-portfolio",
         repo: "https://github.com/escowin/professional-portfolio",
         liveUrl: "https://escowin.github.io/professional-portfolio",
-        languages: "html css js",
+        languages: "html css",
         dialects: "",
         highlight: false,
         collaboration: false
@@ -14,7 +14,7 @@ const portfolio = [
         id: "password-generator",
         repo: "https://github.com/escowin/password-generator",
         liveUrl: "https://escowin.github.io/password-generator/",
-        languages: "html css js es6",
+        languages: "html css js",
         dialects: "",
         highlight: false,
         collaboration: false
@@ -24,7 +24,7 @@ const portfolio = [
         id: "coding-quiz",
         repo: "https://github.com/escowin/coding-quiz",
         liveUrl: "https://escowin.github.io/coding-quiz/",
-        languages: "html css js es6",
+        languages: "html css js",
         dialects: "",
         highlight: false,
         collaboration: false
@@ -34,7 +34,7 @@ const portfolio = [
         id: "weather-dashboard",
         repo: "https://github.com/escowin/weather-dashboard",
         liveUrl: "https://escowin.github.io/weather-dashboard/",
-        languages: "html css js es6 api",
+        languages: "html css js api",
         dialects: "jquery moment",
         highlight: false,
         collaboration: false
@@ -54,7 +54,7 @@ const portfolio = [
         id: "team-profile-generator",
         repo: "https://github.com/escowin/team-profile-generator",
         liveUrl: null,
-        languages: "css js node es6",
+        languages: "oop &#183; css js node",
         dialects: "inquirer jest",
         highlight: false,
         collaboration: false
@@ -64,7 +64,7 @@ const portfolio = [
         id: "portfolio-generator",
         repo: "https://github.com/escowin/portfolio-generator",
         liveUrl: null,
-        languages: "css js node es6",
+        languages: "css js node",
         dialects: "inquirer",
         highlight: false,
         collaboration: false
@@ -74,7 +74,7 @@ const portfolio = [
         id: "readme-generator",
         repo: "https://github.com/escowin/readme-generator",
         liveUrl: null,
-        languages: "js node es6",
+        languages: "js node",
         dialects: "inquirer",
         highlight: false,
         collaboration: false
@@ -94,8 +94,8 @@ const portfolio = [
         id: "bluestrawberry",
         repo: "https://github.com/escowin/bluestrawberry",
         liveUrl: "https://escowin.github.io/bluestrawberry",
-        languages: "css js es6",
-        dialects: "react.js",
+        languages: "js css",
+        dialects: "react",
         highlight: true,
         collaboration: false
     },
@@ -104,7 +104,7 @@ const portfolio = [
         id: "solar-weather",
         repo: "https://github.com/escowin/solar-weather-app",
         liveUrl: "https://escowin.github.io/solar-weather-app",
-        languages: "html css js es6 api",
+        languages: "html css js api",
         dialects: "jquery moment",
         highlight: false,
         collaboration: false
@@ -114,8 +114,18 @@ const portfolio = [
         id: "note-taker",
         repo: "https://github.com/escowin/note-taker",
         liveUrl: null,
-        languages: "js es6 css html",
+        languages: "js css html",
         dialects: "express node bootstrap",
+        highlight: false,
+        collaboration: false,
+    },
+    {
+        name: "Cms blog",
+        id: "cms-blog",
+        repo: "https://github.com/escowin/cms-blog",
+        liveUrl: null,
+        languages: "mvc &#183; js css sql",
+        dialects: "express handlebars sequelize mysql",
         highlight: false,
         collaboration: false,
     },
@@ -154,7 +164,7 @@ const portfolio = [
         id: "address-book",
         repo: "https://github.com/escowin/address-book-escobar-edwin",
         liveUrl: null,
-        languages: "ruby sql",
+        languages: "mvc &#183; ruby sql",
         dialects: "rails postgres bootstrap",
         highlight: false,
         collaboration: false
