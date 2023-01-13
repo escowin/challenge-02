@@ -180,7 +180,7 @@ header {
 
 .project-text {
   color: var(--offwhite);
-  background: linear-gradient(0.25turn, rgba(22, 18, 18, 0.437), var(--offblack));
+  background: linear-gradient(0.25turn, rgba(22, 18, 18, 0.65), var(--offblack));
   border-radius: 0 1rem 1rem 0;
   padding: .12rem 0 .12rem 1vw;
   width: 95%;
@@ -336,6 +336,10 @@ a:hover {
   background-image: url('../images/small/team-profile-generator.jpg');
 }
 
+#vvh-financial {
+  background-image: url('../images/small/vvh-financial.jpg');
+}
+
 #weather-dashboard {
   background-image: url('../images/small/weather-dashboard.jpg');
 }
@@ -375,6 +379,10 @@ a:hover {
     background-image: url('../images/medium/team-profile-generator.jpg');
   }
 
+  #vvh-financial {
+    background-image: url('../images/medium/vvh-financial.jpg');
+  }
+  
   #weather-dashboard {
     background-image: url('../images/medium/weather-dashboard.jpg');
   }
@@ -642,6 +650,10 @@ a:hover {
     background-image: url('../images/large/team-profile-generator.jpg');
   }
 
+  #vvh-financial {
+    background-image: url('../images/large/vvh-financial.jpg');
+  }
+  
   #weather-dashboard {
     background-image: url('../images/large/weather-dashboard.jpg');
   }

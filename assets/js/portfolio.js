@@ -96,7 +96,7 @@ const portfolio = [
         liveUrl: "https://escowin.github.io/bluestrawberry",
         languages: "js css",
         dialects: "react",
-        highlight: true,
+        highlight: false,
         collaboration: false
     },
     {
@@ -127,6 +127,16 @@ const portfolio = [
         languages: "mvc &#183; js css sql",
         dialects: "express handlebars sequelize mysql",
         highlight: false,
+        collaboration: false,
+    },
+    {
+        name: "VVH Financial",
+        id: "vvh-financial",
+        repo: "https://github.com/escowin/vvh-financial",
+        liveUrl: null,
+        languages: "mvc &#183; js css sql",
+        dialects: "express handlebars sequelize mysql bcrypt sessions",
+        highlight: true,
         collaboration: false,
     },
     {
