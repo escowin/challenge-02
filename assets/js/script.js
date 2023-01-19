@@ -7,19 +7,33 @@ const collaborationsEl = document.getElementById("collaborations-container");
 function displayAbout(details) {
   let languages = details.languages.toString().replace(/,/g, " ");
 
-  let css = details.frameworks.css.toString().replace(/,/g, " ");
-  let js = details.frameworks.js.toString().replace(/,/g, " ");
-  let ruby = details.frameworks.ruby.toString().replace(/,/g, " ");
-  let db = details.frameworks.db.sort().toString().replace(/,/g, " ");
-  let paradigms = details.paradigms.sort().toString().replace(/,/g, " ");
-  let tools = details.tools.toString().replace(/,/g, " ");
+  const cssLibraries = details.libraries.css.toString().replace(/,/g, " ");
+  const jsLibraries = details.libraries.js
+    .sort()
+    .toString()
+    .replace(/,/g, " ");
+
+  const jsFrameworks = details.frameworks.js
+    .sort()
+    .toString()
+    .replace(/,/g, " ");
+  const rubyFrameworks = details.frameworks.ruby
+    .sort()
+    .toString()
+    .replace(/,/g, " ");
+  const db = details.frameworks.db.sort().toString().replace(/,/g, " ");
+  const paradigms = details.paradigms.toString().replace(/,/g, " ");
+  const tools = details.tools.toString().replace(/,/g, " ");
 
   aboutTextEl.innerHTML = `<h3>Software engineer</h3>
   <div>
     <h4>Languages</h4> <p>${languages}</p>
   </div>
   <div>
-    <h4>Frameworks</h4> <p>${css} ${js} ${ruby}</p>
+    <h4>Frameworks</h4> <p>${jsFrameworks} ${rubyFrameworks}</p>
+  </div>
+  <div>
+    <h4>Libraries</h4> <p>${cssLibraries} ${jsLibraries}</p>
   </div>
   <div>
     <h4>Databases</h4> <p>${db}</p>

@@ -130,6 +130,16 @@ const portfolio = [
         collaboration: false,
     },
     {
+        name: "Social network api",
+        id: "social-network",
+        repo: "https://github.com/escowin/social-network",
+        liveUrl: null,
+        languages: "nosql &#183; js",
+        dialects: "express mongoose mongodb",
+        highlight: false,
+        collaboration: false,
+    },
+    {
         name: "VVH Financial",
         id: "vvh-financial",
         repo: "https://github.com/escowin/vvh-financial",

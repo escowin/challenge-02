@@ -1,23 +1,24 @@
 // data | knowledge & exp
 const expertise = {
-  languages: ["html", "css", "javascript", "es6", "json", "ruby", "sql" ],
-  frameworks: {
+  languages: ["html", "css", "javascript", "json", "ruby", "sql" ],
+  libraries: {
     css: ["bootstrap"],
     js: [
       "bcrypt",
       // "day",
-      // "moment",
+      "moment",
       "handlebars",
       "inquirer",
       "jest",
       "jquery",
-      "react",
       "redux",
       "sequelize",
-      "node",
       "mongoose"
     ],
-    db: ["mysql", "graphql", "mongodb", "postgresql", "sqlite"],
+  },
+  frameworks: {
+    js: ["node", "express", "react"],
+    db: ["jawsdb", "mysql", "graphql", "mongodb", "postgresql", "sqlite", "mongodb&thinsp;atlas"],
     ruby: ["rails"]
   },
   paradigms: ["mvc", "oop", "orm", "odm", "rwd", "spa", "tdd", "nosql"],
@@ -27,7 +28,6 @@ const expertise = {
     "npm",
     "heroku",
     "insomnia",
-    "jawsdb",
     "adobe&thinsp;cc",
     "corel&thinsp;painter",
     "wordpress",
@@ -44,15 +44,15 @@ const experience = [
     location: "Dallas, TX",
     code: "javascript node express handlebars bcrypt sequelize mysql css",
     description: [
-      "Built a MVC application with authguarded Rest API functionality.",
-      "Encrypted sensitive client and agent data.",
-      "Queried SQL database using ORM to protect database from direct manipulation.",
+      "Built a secure MVC application with authguarded Rest API, session management, and password encryption.",
+      "Wrote ORM queries to protected the SQL database from direct manipulation.",
+      "Used Handlebars helpers to conditionally render employee & client views.",
       // "Writing great copy for a financial planner.",
     ],
     url: "https://github.com/escowin/vvh-financial",
   },
   {
-    company: "edX Boot Camps, LLC.",
+    company: "2U | edX boot camps",
     role: "Instructional specialist",
     year: "2022",
     duration: "present",
@@ -63,18 +63,18 @@ const experience = [
       "Assisting students struggling with coursework during office hours.",
       "Recording and uploading Zoom classes to Canvas.",
     ],
-    url: "#",
+    url: "https://2u.com/",
   },
   {
     company: "Escowin art",
     role: "Site developer",
     year: "2018",
-    duration: "present",
+    duration: "4 years",
     location: "Austin, TX",
     code: "html css javascript jquery adobe&thinsp;cc corel&thinsp;painter",
     description: [
       "Sole proprietorship to sell my art here in Austin. Built site to serve as my portfolio and business card.",
-      //   "Initially built with wordpress, the site has since been rebuilt using html, css, javascript and jquery.",
+      // "Initially built with wordpress, the site has since been rebuilt using frontend web.",
       "Redesigning frontend using react.js.",
       "Building a sql database to re-incorporate e-commerce functionality.",
     ],

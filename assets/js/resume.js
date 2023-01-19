@@ -6,45 +6,53 @@ const endeavorsEl = document.getElementById("endeavors");
 
 // logic | display language data in expertise section
 function generateExpertise(skillset) {
-    // stringifies and styles the array />,/g, ">"
-    const languages = skillset.languages.toString().replace(/,/g, " ");
-    const cssFrameworks = skillset.frameworks.css.toString().replace(/,/g, " ");
-    const jsFrameworks = skillset.frameworks.js
-      .sort()
-      .toString()
-      .replace(/,/g, " ");
-    const rubyFrameworks = skillset.frameworks.ruby
-      .sort()
-      .toString()
-      .replace(/,/g, " ");
-    const databases = skillset.frameworks.db.sort().toString().replace(/,/g, " ");
-    const paradigms = skillset.paradigms.toString().replace(/,/g, " ");
-    const tools = skillset.tools.toString().replace(/,/g, " ");
-  
-    return `
+  // stringifies and styles the array />,/g, ">"
+  const languages = skillset.languages.toString().replace(/,/g, " ");
+
+  const cssLibraries = skillset.libraries.css.toString().replace(/,/g, " ");
+  const jsLibraries = skillset.libraries.js
+    .sort()
+    .toString()
+    .replace(/,/g, " ");
+
+  const jsFrameworks = skillset.frameworks.js
+    .sort()
+    .toString()
+    .replace(/,/g, " ");
+  const rubyFrameworks = skillset.frameworks.ruby
+    .sort()
+    .toString()
+    .replace(/,/g, " ");
+  const databases = skillset.frameworks.db.sort().toString().replace(/,/g, " ");
+  const paradigms = skillset.paradigms.toString().replace(/,/g, " ");
+  const tools = skillset.tools.toString().replace(/,/g, " ");
+
+  return `
       <p>Languages</p><p class="skillset">${languages}</p>
       <p>Frameworks</p><p class="skillset">
-        ${cssFrameworks}
         ${jsFrameworks}
         ${rubyFrameworks}
+      </p>
+      <p>Libraries</p><p class="skillset">
+        ${cssLibraries} ${jsLibraries}
       </p>
       <p>Databases</p><p class="skillset">${databases}</p>
       <p>Paradigms</p><p class="skillset">${paradigms}</p>
       <p>Tools</p><p class="skillset">${tools}</p>`;
-  }
-  
-  function displayExpertise() {
-    let template = generateExpertise(expertise);
-    expertiseEl.innerHTML = template;
-  
-    return expertiseEl;
-  }
-  
-  // logic | displays exp data in #exp
-  function generateExperience(exp) {
-    let htmlArr = [];
-    for (let i = 0; i < exp.length; i++) {
-      let html = `
+}
+
+function displayExpertise() {
+  let template = generateExpertise(expertise);
+  expertiseEl.innerHTML = template;
+
+  return expertiseEl;
+}
+
+// logic | displays exp data in #exp
+function generateExperience(exp) {
+  let htmlArr = [];
+  for (let i = 0; i < exp.length; i++) {
+    let html = `
           <article class="row">
               <div>
                   <p class="year">${exp[i].year}</p>
@@ -66,34 +74,34 @@ function generateExpertise(skillset) {
               </div>
             </div>
           </article>`;
-      htmlArr.push(html);
-    }
-    let result = htmlArr.toString().replace(/>,/g, ">");
-    return result;
+    htmlArr.push(html);
   }
-  
-  function generateDescription(description) {
-    let htmlArr = [];
-    for (let i = 0; i < description.length; i++) {
-      let html = `<li>${description[i]}</li>`;
-      htmlArr.push(html);
-    }
-    let result = htmlArr.toString().replace(/>,/g, ">");
-  
-    return result;
+  let result = htmlArr.toString().replace(/>,/g, ">");
+  return result;
+}
+
+function generateDescription(description) {
+  let htmlArr = [];
+  for (let i = 0; i < description.length; i++) {
+    let html = `<li>${description[i]}</li>`;
+    htmlArr.push(html);
   }
-  
-  function displayExperience() {
-    let template = generateExperience(experience);
-    experienceEl.innerHTML = template;
-    return experienceEl;
-  }
-  
-  // logic | displays education data in #education
-  function generateEducation(education) {
-      let htmlArr = [];
-      for (let i = 0; i < education.length; i++) {
-          let html = `<article class="row">
+  let result = htmlArr.toString().replace(/>,/g, ">");
+
+  return result;
+}
+
+function displayExperience() {
+  let template = generateExperience(experience);
+  experienceEl.innerHTML = template;
+  return experienceEl;
+}
+
+// logic | displays education data in #education
+function generateEducation(education) {
+  let htmlArr = [];
+  for (let i = 0; i < education.length; i++) {
+    let html = `<article class="row">
           <p class="year">${education[i].year}</p>
           <div class="text-wrapper">
             <div class="left-text">
@@ -106,25 +114,25 @@ function generateExpertise(skillset) {
             </div>
           </div>
         </article>`;
-  
-        htmlArr.push(html);
-      }
-      let result = htmlArr.toString().replace(/>,/g, ">");
-  
-      return result;
-  };
-  
-  function displayEducation() {
-      let template = generateEducation(education);
-      educationEl.innerHTML = template;
-      return educationEl;
-  };
-  
-  // logic | displays extracurricular data in #endeavors
-  function generateEndeavors(endeavor) {
-    let htmlArr = [];
-    for (let i = 0; i < endeavor.length; i++) {
-      let html = `<article class="row">
+
+    htmlArr.push(html);
+  }
+  let result = htmlArr.toString().replace(/>,/g, ">");
+
+  return result;
+}
+
+function displayEducation() {
+  let template = generateEducation(education);
+  educationEl.innerHTML = template;
+  return educationEl;
+}
+
+// logic | displays extracurricular data in #endeavors
+function generateEndeavors(endeavor) {
+  let htmlArr = [];
+  for (let i = 0; i < endeavor.length; i++) {
+    let html = `<article class="row">
               <p class="year">${endeavor[i].year}</p>
               <div class="text-wrapper">
                   <div class="left-text">
@@ -137,27 +145,27 @@ function generateExpertise(skillset) {
                   </div>
               </div>
           </article>`;
-  
-      htmlArr.push(html);
-    }
-  
-    let result = htmlArr.toString().replace(/>,/g, ">");
-    return result;
-  };
-  
-  function displayEndeavors() {
-    let template = generateEndeavors(endeavors);
-    endeavorsEl.innerHTML = template;
-    return endeavorsEl;
-  };
-  
-  // logic | displays call returns
-  function displayResume() {
-    displayExpertise();
-    displayExperience();
-    displayEducation();
-    displayEndeavors();
+
+    htmlArr.push(html);
   }
 
-  // call
-  displayResume();
+  let result = htmlArr.toString().replace(/>,/g, ">");
+  return result;
+}
+
+function displayEndeavors() {
+  let template = generateEndeavors(endeavors);
+  endeavorsEl.innerHTML = template;
+  return endeavorsEl;
+}
+
+// logic | displays call returns
+function displayResume() {
+  displayExpertise();
+  displayExperience();
+  displayEducation();
+  displayEndeavors();
+}
+
+// call
+displayResume();
