@@ -84,8 +84,8 @@ const portfolio = [
         id: "escowinart",
         repo: "https://github.com/escowin/escowinart",
         liveUrl: "https://escowinart.com/",
-        languages: "html css js",
-        dialects: "jquery",
+        languages: "js css",
+        dialects: "react",
         highlight: false,
         collaboration: false
     },

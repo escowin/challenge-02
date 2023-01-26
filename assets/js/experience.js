@@ -5,15 +5,15 @@ const expertise = {
     css: ["bootstrap"],
     js: [
       "bcrypt",
-      // "day",
-      "moment",
+      "day",
       "handlebars",
       "inquirer",
       "jest",
       "jquery",
       "redux",
       "sequelize",
-      "mongoose"
+      "mongoose",
+      "webpack"
     ],
   },
   frameworks: {
@@ -21,7 +21,7 @@ const expertise = {
     db: ["jawsdb", "mysql", "graphql", "mongodb", "postgresql", "sqlite", "mongodb&thinsp;atlas"],
     ruby: ["rails"]
   },
-  paradigms: ["mvc", "oop", "orm", "odm", "rwd", "spa", "tdd", "nosql"],
+  paradigms: ["mvc", "oop", "orm", "odm", "pwa", "rwd", "spa", "tdd", "nosql"],
   tools: [
     "api",
     "git",
@@ -69,14 +69,13 @@ const experience = [
     company: "Escowin art",
     role: "Site developer",
     year: "2018",
-    duration: "4 years",
+    duration: "present",
     location: "Austin, TX",
-    code: "html css javascript jquery adobe&thinsp;cc corel&thinsp;painter",
+    code: "react css adobe&thinsp;cc corel&thinsp;painter",
     description: [
-      "Sole proprietorship to sell my art here in Austin. Built site to serve as my portfolio and business card.",
-      // "Initially built with wordpress, the site has since been rebuilt using frontend web.",
-      "Redesigning frontend using react.js.",
-      "Building a sql database to re-incorporate e-commerce functionality.",
+      "Set up sole proprietorship to sell art here in Austin. Site serves as my portfolio and business card.",
+      "Improved site performance using React to build a SPA.",
+      "Building a database to enable e-commerce functionality via Stripe transactions.",
     ],
     url: "https://escowinart.com",
   },
@@ -86,7 +85,7 @@ const experience = [
     year: "2017",
     duration: "5 years",
     location: "Austin, TX",
-    code: "react.js css adobe&thinsp;suite corel&thinsp;painter",
+    code: "react css adobe&thinsp;suite corel&thinsp;painter",
     description: [
       "Wrote and illustrated a dialogue-less hero's journey narrative.",
       "Used Corel Painter to draw the artwork, and Adobe Suite for file formatting.",
