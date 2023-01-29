@@ -7,12 +7,12 @@
     background-image: url('../images/small/bluestrawberry.jpg');
 }
 
-#coding-quiz {
-    background-image: url('../images/small/coding-quiz.jpg');
+#cms-blog {
+    background-image: url('../images/small/cms-blog.jpg');
 }
 
-#professional-portfolio {
-    background-image: url('../images/small/css-portfolio.jpg');
+#coding-quiz {
+    background-image: url('../images/small/coding-quiz.jpg');
 }
 
 #day-planner {
@@ -29,6 +29,10 @@
 
 #password-generator {
     background-image: url('../images/small/password-generator.jpg');
+}
+
+#portfolio {
+    background-image: url('../images/small/portfolio.jpg');
 }
 
 #portfolio-generator {
@@ -82,12 +86,20 @@
         background-image: url('../images/medium/address-book.jpg');
     }
 
+    #cms-blog {
+        background-image: url('../images/medium/cms-blog.jpg');
+    }
+
     #coding-quiz {
         background-image: url('../images/medium/coding-quiz.jpg');
     }
 
     #note-taker {
         background-image: url('../images/medium/note-taker.jpg');
+    }
+
+    #portfolio {
+        background-image: url('../images/medium/portfolio.jpg');
     }
 
     #portfolio-generator {
@@ -114,16 +126,16 @@
         background-image: url('../images/large/address-book.jpg');
     }
 
+    #cms-blog {
+        background-image: url('../images/large/cms-blog.jpg');
+    }
+
     #bluestrawberry {
         background-image: url('../images/large/bluestrawberry.jpg');
     }
 
     #coding-quiz {
         background-image: url('../images/large/coding-quiz.jpg');
-    }
-
-    #professional-portfolio {
-        background-image: url('../images/large/css-portfolio.jpg');
     }
 
     #day-planner {
@@ -140,6 +152,10 @@
 
     #password-generator {
         background-image: url('../images/large/password-generator.jpg');
+    }
+
+    #portfolio {
+        background-image: url('../images/large/portfolio.jpg');
     }
 
     #portfolio-generator {

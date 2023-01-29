@@ -179,7 +179,7 @@ header {
 
 .project-text {
   color: var(--offwhite);
-  background: linear-gradient(0.25turn, rgba(22, 18, 18, 0.65), var(--offblack));
+  background: linear-gradient(0.25turn, rgba(22, 18, 18, 0.75), var(--offblack));
   border-radius: 0 1rem 1rem 0;
   padding: .12rem 0 .12rem 1vw;
   width: 95%;
@@ -261,6 +261,10 @@ footer h2 {
 
 .copyright {
   font-size: .5rem;
+}
+
+.project-title {
+  font-weight: bolder;
 }
 
 /* pseudo classes */
@@ -451,6 +455,10 @@ a:hover {
 
   #collaborations {
     grid-area: d;
+  }
+
+  #collaborations .project {
+    height: 50vh;
   }
 
   #project {

@@ -7,7 +7,7 @@ const collaborationsEl = document.getElementById("collaborations-container");
 function displayAbout() {
   const aboutText = {
     h3: "Software engineer",
-    body: "This is a visual representation of my work built with html, css, and vanilla javascript. I have since built a new portfolio to demonstrate my proficiency with React.",
+    body: "This is an old visual representation of my work built with html, css, and vanilla javascript. I have since built a new portfolio to demonstrate my proficiency with React.",
     react: "react portfolio",
     link: "https://escowin.github.io/portfolio"
   };
@@ -76,7 +76,7 @@ function displayHighlight(highlight) {
   return `
   <div class="project highlight" id="${highlight[0].id}">
     <div class="project-text">
-      <h3>${highlight[0].name}</h3>
+      <h3 class="project-title">${highlight[0].name}</h3>
       ${links(highlight[0])}
       <p>${highlight[0].languages}</p>
       <p>${highlight[0].dialects}</p>
@@ -91,7 +91,7 @@ function displayApps(apps) {
     let result = `
     <div class="project" id="${apps[i].id}">
       <div class="project-text">
-        <h3>${apps[i].name}</h3>
+        <h3 class="project-title">${apps[i].name}</h3>
         ${links(apps[i])}
         <p>${apps[i].languages}</p>
         <p>${apps[i].dialects}</p>
