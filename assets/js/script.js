@@ -4,45 +4,23 @@ const soloWorkEl = document.getElementById("solo-work-container");
 const collaborationsEl = document.getElementById("collaborations-container");
 
 // logic | about section
-function displayAbout(details) {
-  let languages = details.languages.toString().replace(/,/g, " ");
+function displayAbout() {
+  const aboutText = {
+    h3: "Software engineer",
+    body: "This is a visual representation of my work built with html, css, and vanilla javascript. I have since built a new portfolio to demonstrate my proficiency with React.",
+    react: "react portfolio",
+    link: "https://escowin.github.io/portfolio"
+  };
 
-  const cssLibraries = details.libraries.css.toString().replace(/,/g, " ");
-  const jsLibraries = details.libraries.js
-    .sort()
-    .toString()
-    .replace(/,/g, " ");
-
-  const jsFrameworks = details.frameworks.js
-    .sort()
-    .toString()
-    .replace(/,/g, " ");
-  const rubyFrameworks = details.frameworks.ruby
-    .sort()
-    .toString()
-    .replace(/,/g, " ");
-  const db = details.frameworks.db.sort().toString().replace(/,/g, " ");
-  const paradigms = details.paradigms.toString().replace(/,/g, " ");
-  const tools = details.tools.toString().replace(/,/g, " ");
-
-  aboutTextEl.innerHTML = `<h3>Software engineer</h3>
+  aboutTextEl.innerHTML = `<h3>${aboutText.h3}</h3>
   <div>
-    <h4>Languages</h4> <p>${languages}</p>
-  </div>
-  <div>
-    <h4>Frameworks</h4> <p>${jsFrameworks} ${rubyFrameworks}</p>
-  </div>
-  <div>
-    <h4>Libraries</h4> <p>${cssLibraries} ${jsLibraries}</p>
-  </div>
-  <div>
-    <h4>Databases</h4> <p>${db}</p>
-  </div>
-  <div>
-    <h4>Paradigms</h4> <p>${paradigms}</p>
-  </div>
-  <div>
-    <h4>Tools</h4> <p>${tools}</p>
+    <p>${aboutText.body}
+      <br/><br/>
+      
+      <a href="${aboutText.link}" target="_blank">
+        <i class="fa-solid fa-link"></i> ${aboutText.react}
+      </a>
+    </p>
   </div>`;
 
   return aboutTextEl.innerHTML;
@@ -137,5 +115,5 @@ function links(app) {
 }
 
 // calls
-displayAbout(expertise);
+displayAbout();
 displayPortfolio(portfolio);

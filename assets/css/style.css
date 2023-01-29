@@ -150,7 +150,7 @@ header {
   width: 9rem;
   border-radius: 50%;
   border: .25rem solid var(--offblack);
-  box-shadow: var(--box-shadow) var(--offblack), inset var(--box-shadow) var(--offblack);
+  box-shadow: inset var(--box-shadow) var(--offblack);
   margin-top: .75rem;
 }
 
@@ -172,7 +172,6 @@ header {
   opacity: 95%;
   border-radius: 1rem;
   min-height: 35vh;
-  box-shadow: var(--box-shadow) var(--offblack);
   transition: 1s;
   background-size: cover;
   background-position: center;
@@ -204,7 +203,6 @@ header {
 .contact-info {
   padding: .75vh 3vw;
   border-radius: 1rem;
-  box-shadow: var(--box-shadow) var(--offblack);
 }
 
 #linkedin-btn {
@@ -273,7 +271,6 @@ a:hover {
 }
 
 .project:active {
-  box-shadow: var(--box-shadow) var(--accent);
   opacity: 100%;
 }
 
@@ -401,11 +398,6 @@ a:hover {
 
   #about-pic-container p {
     display: none;
-  }
-
-  #about-text-container div {
-    display: grid;
-    grid-template-columns: 9rem auto;
   }
 
   #about-text-container h3 {
